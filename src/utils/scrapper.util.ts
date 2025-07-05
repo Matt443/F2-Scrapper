@@ -38,17 +38,21 @@ export function raceStartEnd(year: number, dateString: string): StartEndDates {
 }
 
 export function assignPointsToRaces(driverPoints: string[], racesArray: TableRace[]) {
-    return racesArray.map((element, index) => {
+    let index = 0;
+    const races = [];
+    for (const race of racesArray) {
         const currentIndex = index * 2;
-        console.log(currentIndex);
-        return {
-            ...element,
-            sprintRace:
-                driverPoints[currentIndex] !== '-' ? Number(driverPoints[currentIndex]) : '-',
+        if (driverPoints[currentIndex] === '-' && driverPoints[currentIndex + 1] === '-')
+            return races;
+
+        races.push({
+            ...race,
+            sprintRace: Number(driverPoints[currentIndex]),
             featureRace:
                 driverPoints[currentIndex + 1] !== '-'
                     ? Number(driverPoints[currentIndex + 1])
                     : '-'
-        };
-    });
+        });
+        index++;
+    }
 }
