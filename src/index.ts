@@ -1,7 +1,7 @@
 import { getDriverStandings } from './scrappers/driver-standings.scrappper';
 
 async function f() {
-    console.log(await getDriverStandings(2025, true));
+    console.log(await getDriverStandings(2024, true));
 }
 
 f();

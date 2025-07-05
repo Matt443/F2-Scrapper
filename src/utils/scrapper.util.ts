@@ -51,17 +51,17 @@ export function assignPointsToRaces(
     const races: RacesDetails[] = [];
     for (const race of racesArray) {
         const currentIndex = index * 2;
-        if (driverPoints[currentIndex] === '-' && driverPoints[currentIndex + 1] === '-')
-            return races;
+        if (!(driverPoints[currentIndex] === '-' && driverPoints[currentIndex + 1] === '-')) {
+            races.push({
+                ...race,
+                sprintRace: Number(driverPoints[currentIndex]),
+                featureRace:
+                    driverPoints[currentIndex + 1] !== '-'
+                        ? Number(driverPoints[currentIndex + 1])
+                        : null
+            });
+        }
 
-        races.push({
-            ...race,
-            sprintRace: Number(driverPoints[currentIndex]),
-            featureRace:
-                driverPoints[currentIndex + 1] !== '-'
-                    ? Number(driverPoints[currentIndex + 1])
-                    : null
-        });
         index++;
     }
     return races;
