@@ -1,10 +1,12 @@
 import { staticLinks } from '@/consts/urls.const';
-import { DriverStandings } from '@/types/scraped.type';
+import { DriverStandings, TableRace } from '@/types/scraped.type';
+import { assignPointsToRaces, getTableRaces } from '@/utils/scrapper.util';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 
 export async function getDriverStandings(
-    year: number = new Date().getFullYear()
+    year: number = new Date().getFullYear(),
+    racesDetails: boolean = true
 ): Promise<DriverStandings[]> {
     try {
         const driverStandingsURL = `${staticLinks.driverStandings}?seasonId=${174 + (year - 2017)}`;
@@ -26,12 +28,17 @@ export async function getDriverStandings(
         });
 
         function assignTableValues(driver: string[]) {
-            return {
+            const driverDetails = {
                 position: Number(driver[0]),
                 name: driver[1],
                 code: driver[2],
                 points: Number(driver[3])
             };
+            if (racesDetails) {
+                const racesDetails: TableRace[] = getTableRaces(year, response.data);
+                console.log(assignPointsToRaces(driver.slice(4), racesDetails), driver[1]);
+            }
+            return driverDetails;
         }
         return driverStandings;
     } catch (error: unknown) {
