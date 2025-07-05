@@ -10,10 +10,7 @@ const config: Config = {
     preset: 'ts-jest/presets/default-esm',
     extensionsToTreatAsEsm: ['.ts'],
     moduleFileExtensions: ['ts', 'js'],
-    collectCoverage: true,
-    collectCoverageFrom: ['src/**/*.{js,ts}', '!src/index.ts'],
-    coverageReporters: ['json', 'lcov', 'text'],
-    coverageDirectory: 'coverage'
+    collectCoverage: true
 };
 
 export default config;
