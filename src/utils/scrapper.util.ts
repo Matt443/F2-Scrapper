@@ -1,4 +1,4 @@
-import { TableRace } from '@/types/scraped.type';
+import { RacesDetails, TableRace } from '@/types/scraped.type';
 import { StartEndDates } from '@/types/utils.type';
 import * as cheerio from 'cheerio';
 
@@ -37,9 +37,12 @@ export function raceStartEnd(year: number, dateString: string): StartEndDates {
     };
 }
 
-export function assignPointsToRaces(driverPoints: string[], racesArray: TableRace[]) {
+export function assignPointsToRaces(
+    driverPoints: string[],
+    racesArray: TableRace[]
+): RacesDetails[] {
     let index = 0;
-    const races = [];
+    const races: RacesDetails[] = [];
     for (const race of racesArray) {
         const currentIndex = index * 2;
         if (driverPoints[currentIndex] === '-' && driverPoints[currentIndex + 1] === '-')
@@ -51,8 +54,9 @@ export function assignPointsToRaces(driverPoints: string[], racesArray: TableRac
             featureRace:
                 driverPoints[currentIndex + 1] !== '-'
                     ? Number(driverPoints[currentIndex + 1])
-                    : '-'
+                    : null
         });
         index++;
     }
+    return races;
 }

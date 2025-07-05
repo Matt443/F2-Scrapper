@@ -5,11 +5,18 @@ export interface DriverStandings {
     name: string;
     code: string;
     points: number;
-    races?: TableRace;
+    racesDetails?: RacesDetails[];
 }
+
+export type RacesDetails = TableRace & RacePoints;
 
 export interface TableRace {
     name: string;
     flagSrc: string;
     dates: StartEndDates;
+}
+
+export interface RacePoints {
+    sprintRace: number | null;
+    featureRace: number | null;
 }

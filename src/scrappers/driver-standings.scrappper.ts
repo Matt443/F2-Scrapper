@@ -6,7 +6,7 @@ import * as cheerio from 'cheerio';
 
 export async function getDriverStandings(
     year: number = new Date().getFullYear(),
-    racesDetails: boolean = true
+    racesDetails: boolean = false
 ): Promise<DriverStandings[]> {
     try {
         const driverStandingsURL = `${staticLinks.driverStandings}?seasonId=${174 + (year - 2017)}`;
@@ -28,15 +28,15 @@ export async function getDriverStandings(
         });
 
         function assignTableValues(driver: string[]) {
-            const driverDetails = {
+            const driverDetails: DriverStandings = {
                 position: Number(driver[0]),
                 name: driver[1],
                 code: driver[2],
                 points: Number(driver[3])
             };
             if (racesDetails) {
-                const racesDetails: TableRace[] = getTableRaces(year, response.data);
-                console.log(assignPointsToRaces(driver.slice(4), racesDetails), driver[1]);
+                const races: TableRace[] = getTableRaces(year, response.data);
+                driverDetails.racesDetails = assignPointsToRaces(driver.slice(4), races);
             }
             return driverDetails;
         }
