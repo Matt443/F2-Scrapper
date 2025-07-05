@@ -37,6 +37,12 @@ export function raceStartEnd(year: number, dateString: string): StartEndDates {
     };
 }
 
+/**
+ *
+ * @param {string[]} driverPoints - ex. [sprintRace, featureRace, sprintRace, featureRace ...]
+ * @param {RacesDetails} racesArray
+ * @returns {RacesDetails[]}
+ */
 export function assignPointsToRaces(
     driverPoints: string[],
     racesArray: TableRace[]
