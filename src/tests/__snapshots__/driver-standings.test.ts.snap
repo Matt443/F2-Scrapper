@@ -1,203 +1,6 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`  1`] = `
-[
-  {
-    "code": "BOR",
-    "name": "G. Bortoleto",
-    "points": 214.5,
-    "position": 1,
-  },
-  {
-    "code": "HAD",
-    "name": "I. Hadjar",
-    "points": 192,
-    "position": 2,
-  },
-  {
-    "code": "ARO",
-    "name": "P. Aron",
-    "points": 163,
-    "position": 3,
-  },
-  {
-    "code": "MAL",
-    "name": "Z. Maloney",
-    "points": 140,
-    "position": 4,
-  },
-  {
-    "code": "CRA",
-    "name": "J. Crawford",
-    "points": 125,
-    "position": 5,
-  },
-  {
-    "code": "ANT",
-    "name": "A. Antonelli",
-    "points": 113,
-    "position": 6,
-  },
-  {
-    "code": "VMA",
-    "name": "V. Martins",
-    "points": 107,
-    "position": 7,
-  },
-  {
-    "code": "VER",
-    "name": "R. Verschoor",
-    "points": 106,
-    "position": 8,
-  },
-  {
-    "code": "COL",
-    "name": "F. Colapinto",
-    "points": 96,
-    "position": 9,
-  },
-  {
-    "code": "DUR",
-    "name": "J. Dürksen",
-    "points": 87,
-    "position": 10,
-  },
-  {
-    "code": "HAU",
-    "name": "D. Hauger",
-    "points": 85.5,
-    "position": 11,
-  },
-  {
-    "code": "BEA",
-    "name": "O. Bearman",
-    "points": 75,
-    "position": 12,
-  },
-  {
-    "code": "MAI",
-    "name": "K. Maini",
-    "points": 74,
-    "position": 13,
-  },
-  {
-    "code": "JMA",
-    "name": "J. Martí",
-    "points": 62,
-    "position": 14,
-  },
-  {
-    "code": "FIT",
-    "name": "E. Fittipaldi",
-    "points": 61,
-    "position": 15,
-  },
-  {
-    "code": "OSU",
-    "name": "Z. O'Sullivan",
-    "points": 59,
-    "position": 16,
-  },
-  {
-    "code": "ACO",
-    "name": "A. Cordeel",
-    "points": 39,
-    "position": 17,
-  },
-  {
-    "code": "JCO",
-    "name": "J. Correa",
-    "points": 31,
-    "position": 18,
-  },
-  {
-    "code": "MIY",
-    "name": "R. Miyata",
-    "points": 31,
-    "position": 19,
-  },
-  {
-    "code": "BEG",
-    "name": "D. Beganovic",
-    "points": 22,
-    "position": 20,
-  },
-  {
-    "code": "BAR",
-    "name": "T. Barnard",
-    "points": 18,
-    "position": 21,
-  },
-  {
-    "code": "GOE",
-    "name": "O. Goethe",
-    "points": 14,
-    "position": 22,
-  },
-  {
-    "code": "STA",
-    "name": "R. Stanek",
-    "points": 14,
-    "position": 23,
-  },
-  {
-    "code": "VIL",
-    "name": "R. Villagómez",
-    "points": 13,
-    "position": 24,
-  },
-  {
-    "code": "MAN",
-    "name": "C. Mansell",
-    "points": 10,
-    "position": 25,
-  },
-  {
-    "code": "BRO",
-    "name": "L. Browning",
-    "points": 7,
-    "position": 26,
-  },
-  {
-    "code": "MIN",
-    "name": "G. Minì",
-    "points": 6,
-    "position": 27,
-  },
-  {
-    "code": "BEN",
-    "name": "J. Bennett",
-    "points": 4,
-    "position": 28,
-  },
-  {
-    "code": "FOR",
-    "name": "L. Fornaroli",
-    "points": 0,
-    "position": 29,
-  },
-  {
-    "code": "SHI",
-    "name": "C. Shields",
-    "points": 0,
-    "position": 30,
-  },
-  {
-    "code": "EST",
-    "name": "M. Esterson",
-    "points": 0,
-    "position": 31,
-  },
-  {
-    "code": "KOO",
-    "name": "N. Koolen",
-    "points": 0,
-    "position": 32,
-  },
-]
-`;
-
-exports[`  2`] = `
+exports[`Testing getDriverStandigns function Should return driver standings with racesDetails 1`] = `
 [
   {
     "code": "BOR",
@@ -3514,6 +3317,203 @@ exports[`  2`] = `
         "sprintRace": 0,
       },
     ],
+  },
+]
+`;
+
+exports[`Testing getDriverStandigns function Should return driver standings without racesDetails 1`] = `
+[
+  {
+    "code": "BOR",
+    "name": "G. Bortoleto",
+    "points": 214.5,
+    "position": 1,
+  },
+  {
+    "code": "HAD",
+    "name": "I. Hadjar",
+    "points": 192,
+    "position": 2,
+  },
+  {
+    "code": "ARO",
+    "name": "P. Aron",
+    "points": 163,
+    "position": 3,
+  },
+  {
+    "code": "MAL",
+    "name": "Z. Maloney",
+    "points": 140,
+    "position": 4,
+  },
+  {
+    "code": "CRA",
+    "name": "J. Crawford",
+    "points": 125,
+    "position": 5,
+  },
+  {
+    "code": "ANT",
+    "name": "A. Antonelli",
+    "points": 113,
+    "position": 6,
+  },
+  {
+    "code": "VMA",
+    "name": "V. Martins",
+    "points": 107,
+    "position": 7,
+  },
+  {
+    "code": "VER",
+    "name": "R. Verschoor",
+    "points": 106,
+    "position": 8,
+  },
+  {
+    "code": "COL",
+    "name": "F. Colapinto",
+    "points": 96,
+    "position": 9,
+  },
+  {
+    "code": "DUR",
+    "name": "J. Dürksen",
+    "points": 87,
+    "position": 10,
+  },
+  {
+    "code": "HAU",
+    "name": "D. Hauger",
+    "points": 85.5,
+    "position": 11,
+  },
+  {
+    "code": "BEA",
+    "name": "O. Bearman",
+    "points": 75,
+    "position": 12,
+  },
+  {
+    "code": "MAI",
+    "name": "K. Maini",
+    "points": 74,
+    "position": 13,
+  },
+  {
+    "code": "JMA",
+    "name": "J. Martí",
+    "points": 62,
+    "position": 14,
+  },
+  {
+    "code": "FIT",
+    "name": "E. Fittipaldi",
+    "points": 61,
+    "position": 15,
+  },
+  {
+    "code": "OSU",
+    "name": "Z. O'Sullivan",
+    "points": 59,
+    "position": 16,
+  },
+  {
+    "code": "ACO",
+    "name": "A. Cordeel",
+    "points": 39,
+    "position": 17,
+  },
+  {
+    "code": "JCO",
+    "name": "J. Correa",
+    "points": 31,
+    "position": 18,
+  },
+  {
+    "code": "MIY",
+    "name": "R. Miyata",
+    "points": 31,
+    "position": 19,
+  },
+  {
+    "code": "BEG",
+    "name": "D. Beganovic",
+    "points": 22,
+    "position": 20,
+  },
+  {
+    "code": "BAR",
+    "name": "T. Barnard",
+    "points": 18,
+    "position": 21,
+  },
+  {
+    "code": "GOE",
+    "name": "O. Goethe",
+    "points": 14,
+    "position": 22,
+  },
+  {
+    "code": "STA",
+    "name": "R. Stanek",
+    "points": 14,
+    "position": 23,
+  },
+  {
+    "code": "VIL",
+    "name": "R. Villagómez",
+    "points": 13,
+    "position": 24,
+  },
+  {
+    "code": "MAN",
+    "name": "C. Mansell",
+    "points": 10,
+    "position": 25,
+  },
+  {
+    "code": "BRO",
+    "name": "L. Browning",
+    "points": 7,
+    "position": 26,
+  },
+  {
+    "code": "MIN",
+    "name": "G. Minì",
+    "points": 6,
+    "position": 27,
+  },
+  {
+    "code": "BEN",
+    "name": "J. Bennett",
+    "points": 4,
+    "position": 28,
+  },
+  {
+    "code": "FOR",
+    "name": "L. Fornaroli",
+    "points": 0,
+    "position": 29,
+  },
+  {
+    "code": "SHI",
+    "name": "C. Shields",
+    "points": 0,
+    "position": 30,
+  },
+  {
+    "code": "EST",
+    "name": "M. Esterson",
+    "points": 0,
+    "position": 31,
+  },
+  {
+    "code": "KOO",
+    "name": "N. Koolen",
+    "points": 0,
+    "position": 32,
   },
 ]
 `;

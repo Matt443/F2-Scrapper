@@ -1,7 +1,7 @@
-import { getDriverStandings } from './scrappers/driver-standings.scrappper.js';
+import { getTeamStandings } from './scrappers/team-standings.scrapper.js';
 
 async function f() {
-    console.log(await getDriverStandings(2024, true));
+    console.log(await getTeamStandings(2024, true));
 }
 
 f();
