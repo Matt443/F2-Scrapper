@@ -24,8 +24,8 @@ npm run dev
 
 | Needs Paramter ? | Paramter Description                                                      | Default Argument |
 | ---------------- | ------------------------------------------------------------------------- | ---------------- |
-| Yes - 1          | The year from which you want to extract points table for (2017 - current) | current year     |
-| Yes - 1          | if `racesDetails` property should be attached                             | `False`          |
+| No               | The year from which you want to extract points table for (2017 - current) | current year     |
+| No               | if `racesDetails` property should be attached                             | `False`          |
 
 ![driver standings](./readme/driver-standings.png)
 
