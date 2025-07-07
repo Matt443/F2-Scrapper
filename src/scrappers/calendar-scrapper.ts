@@ -1,12 +1,12 @@
 import { staticLinks } from '@/consts/urls.const';
 import { RaceEvent } from '@/types/scraped.type';
-import { getSeasonId, raceStartEnd } from '@/utils/scrapper.util';
+import { getRaceWinnersCalendar, getSeasonId, raceStartEnd } from '@/utils/scrapper.util';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 
 export async function getCalendar(
     year: number = new Date().getFullYear(),
-    _winnerDetails: boolean = false
+    winnerDetails: boolean = false
 ): Promise<RaceEvent[]> {
     try {
         const driverStandingsURL = `${staticLinks.calendar}?seasonid=${getSeasonId(year)}`;
@@ -24,11 +24,18 @@ export async function getCalendar(
             };
             const eventName = $(this).find('.event-place span.ellipsis').text();
 
-            events.push({
+            const eventInfo: RaceEvent = {
                 name: eventName,
                 dates: raceStartEnd(year, `${dateObj.start}-${dateObj.end} ${dateObj.month}`),
-                round: Number(round.slice(round.length - 2))
-            });
+                round: Number(round.slice(round.length - 2)),
+                winners: []
+            };
+
+            const htmlContent = $(this).html();
+            if (winnerDetails && htmlContent) {
+                eventInfo.winners = getRaceWinnersCalendar(htmlContent);
+            }
+            events.push(eventInfo);
         });
 
         return events;

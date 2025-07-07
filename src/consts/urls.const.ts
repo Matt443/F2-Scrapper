@@ -8,3 +8,5 @@ export const staticLinks: StaticLinks = {
     teamStandings: 'https://www.fiaformula2.com/Standings/Team',
     calendar: 'https://www.fiaformula2.com/Calendar'
 };
+
+export const baseLink = 'https://www.fiaformula2.com';

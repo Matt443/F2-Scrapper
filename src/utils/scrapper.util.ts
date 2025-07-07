@@ -1,4 +1,5 @@
-import { DriverStandings, RacesDetails, TableRace } from '@/types/scraped.type';
+import { baseLink } from '@/consts/urls.const';
+import { DriverStandings, RacesDetails, RaceWinner, TableRace } from '@/types/scraped.type';
 import { StartEndDates } from '@/types/utils.type';
 import * as cheerio from 'cheerio';
 
@@ -122,4 +123,36 @@ export function assignStandingsValues(
  */
 export function getSeasonId(year: number): number {
     return 174 + (year - 2017);
+}
+
+export function getCalendarDriver(htmlContent: string, i: number = 0): RaceWinner {
+    const $ = cheerio.load(htmlContent);
+
+    return {
+        name: $(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper span.driver-name`).text(),
+        imgLink: $(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper img`).attr('data-src') || '',
+        driverLink: `${baseLink}${$(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper a`).attr(
+            'href'
+        )}`
+    };
+}
+
+export function isCalendarDriverDefined(htmlContent: string, i: number = 0): boolean {
+    const $ = cheerio.load(htmlContent);
+    if (
+        $(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper`).length > 0 &&
+        $(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper .cancelled`).length < 1
+    )
+        return true;
+    return false;
+}
+
+export function getRaceWinnersCalendar(htmlContent: string): RaceWinner[] {
+    const winners: RaceWinner[] = [];
+    for (let i = 0; i < 2; i++) {
+        if (isCalendarDriverDefined(htmlContent, i)) {
+            winners.push(getCalendarDriver(htmlContent, i));
+        }
+    }
+    return winners;
 }

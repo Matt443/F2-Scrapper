@@ -25,4 +25,11 @@ export interface RaceEvent {
     name: string;
     dates: StartEndDates;
     round: number;
+    winners: RaceWinner[];
+}
+
+export interface RaceWinner {
+    name: string;
+    imgLink: string;
+    driverLink: string;
 }
