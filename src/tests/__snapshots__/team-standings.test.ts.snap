@@ -11,7 +11,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-03-02T23:59:59.000Z,
-          "start": 2024-03-29T00:00:00.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
         },
         "featureRace": 18,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
@@ -111,7 +111,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-09-01T23:59:59.000Z,
-          "start": 2024-09-30T00:00:00.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
         },
         "featureRace": 25,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/IT",
@@ -131,7 +131,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-12-01T23:59:59.000Z,
-          "start": 2024-12-29T00:00:00.000Z,
+          "start": 2024-11-29T00:00:00.000Z,
         },
         "featureRace": 15,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/QA",
@@ -159,7 +159,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-03-02T23:59:59.000Z,
-          "start": 2024-03-29T00:00:00.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
         },
         "featureRace": 18,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
@@ -259,7 +259,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-09-01T23:59:59.000Z,
-          "start": 2024-09-30T00:00:00.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
         },
         "featureRace": 0,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/IT",
@@ -279,7 +279,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-12-01T23:59:59.000Z,
-          "start": 2024-12-29T00:00:00.000Z,
+          "start": 2024-11-29T00:00:00.000Z,
         },
         "featureRace": 18,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/QA",
@@ -307,7 +307,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-03-02T23:59:59.000Z,
-          "start": 2024-03-29T00:00:00.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
         },
         "featureRace": 13,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
@@ -407,7 +407,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-09-01T23:59:59.000Z,
-          "start": 2024-09-30T00:00:00.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
         },
         "featureRace": 0,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/IT",
@@ -427,7 +427,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-12-01T23:59:59.000Z,
-          "start": 2024-12-29T00:00:00.000Z,
+          "start": 2024-11-29T00:00:00.000Z,
         },
         "featureRace": 12,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/QA",
@@ -455,7 +455,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-03-02T23:59:59.000Z,
-          "start": 2024-03-29T00:00:00.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
         },
         "featureRace": 15,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
@@ -555,7 +555,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-09-01T23:59:59.000Z,
-          "start": 2024-09-30T00:00:00.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
         },
         "featureRace": 0,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/IT",
@@ -575,7 +575,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-12-01T23:59:59.000Z,
-          "start": 2024-12-29T00:00:00.000Z,
+          "start": 2024-11-29T00:00:00.000Z,
         },
         "featureRace": 34,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/QA",
@@ -603,7 +603,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-03-02T23:59:59.000Z,
-          "start": 2024-03-29T00:00:00.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
         },
         "featureRace": 1,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
@@ -703,7 +703,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-09-01T23:59:59.000Z,
-          "start": 2024-09-30T00:00:00.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
         },
         "featureRace": 18,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/IT",
@@ -723,7 +723,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-12-01T23:59:59.000Z,
-          "start": 2024-12-29T00:00:00.000Z,
+          "start": 2024-11-29T00:00:00.000Z,
         },
         "featureRace": 0,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/QA",
@@ -751,7 +751,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-03-02T23:59:59.000Z,
-          "start": 2024-03-29T00:00:00.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
         },
         "featureRace": 0,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
@@ -851,7 +851,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-09-01T23:59:59.000Z,
-          "start": 2024-09-30T00:00:00.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
         },
         "featureRace": 2,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/IT",
@@ -871,7 +871,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-12-01T23:59:59.000Z,
-          "start": 2024-12-29T00:00:00.000Z,
+          "start": 2024-11-29T00:00:00.000Z,
         },
         "featureRace": 10,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/QA",
@@ -899,7 +899,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-03-02T23:59:59.000Z,
-          "start": 2024-03-29T00:00:00.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
         },
         "featureRace": 12,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
@@ -999,7 +999,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-09-01T23:59:59.000Z,
-          "start": 2024-09-30T00:00:00.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
         },
         "featureRace": 8,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/IT",
@@ -1019,7 +1019,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-12-01T23:59:59.000Z,
-          "start": 2024-12-29T00:00:00.000Z,
+          "start": 2024-11-29T00:00:00.000Z,
         },
         "featureRace": 0,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/QA",
@@ -1047,7 +1047,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-03-02T23:59:59.000Z,
-          "start": 2024-03-29T00:00:00.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
         },
         "featureRace": 27,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
@@ -1147,7 +1147,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-09-01T23:59:59.000Z,
-          "start": 2024-09-30T00:00:00.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
         },
         "featureRace": 20,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/IT",
@@ -1167,7 +1167,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-12-01T23:59:59.000Z,
-          "start": 2024-12-29T00:00:00.000Z,
+          "start": 2024-11-29T00:00:00.000Z,
         },
         "featureRace": 3,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/QA",
@@ -1195,7 +1195,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-03-02T23:59:59.000Z,
-          "start": 2024-03-29T00:00:00.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
         },
         "featureRace": 0,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
@@ -1295,7 +1295,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-09-01T23:59:59.000Z,
-          "start": 2024-09-30T00:00:00.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
         },
         "featureRace": 11,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/IT",
@@ -1315,7 +1315,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-12-01T23:59:59.000Z,
-          "start": 2024-12-29T00:00:00.000Z,
+          "start": 2024-11-29T00:00:00.000Z,
         },
         "featureRace": 0,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/QA",
@@ -1343,7 +1343,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-03-02T23:59:59.000Z,
-          "start": 2024-03-29T00:00:00.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
         },
         "featureRace": 0,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
@@ -1443,7 +1443,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-09-01T23:59:59.000Z,
-          "start": 2024-09-30T00:00:00.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
         },
         "featureRace": 15,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/IT",
@@ -1463,7 +1463,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-12-01T23:59:59.000Z,
-          "start": 2024-12-29T00:00:00.000Z,
+          "start": 2024-11-29T00:00:00.000Z,
         },
         "featureRace": 8,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/QA",
@@ -1491,7 +1491,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-03-02T23:59:59.000Z,
-          "start": 2024-03-29T00:00:00.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
         },
         "featureRace": 0,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
@@ -1591,7 +1591,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-09-01T23:59:59.000Z,
-          "start": 2024-09-30T00:00:00.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
         },
         "featureRace": 5,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/IT",
@@ -1611,7 +1611,7 @@ exports[`Testing getTeamStandigns function Should return team standings with rac
       {
         "dates": {
           "end": 2024-12-01T23:59:59.000Z,
-          "start": 2024-12-29T00:00:00.000Z,
+          "start": 2024-11-29T00:00:00.000Z,
         },
         "featureRace": 4,
         "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/QA",

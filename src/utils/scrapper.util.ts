@@ -49,7 +49,7 @@ export function raceStartEnd(year: number, dateString: string): StartEndDates {
     };
 
     if (Number(startDay) - Number(endDay) > 0)
-        startEndObj.start.setMonth(startEndObj.start.getMonth() + 1);
+        startEndObj.start.setMonth(startEndObj.start.getMonth() - 1);
     return startEndObj;
 }
 
