@@ -1,5 +1,11 @@
 import { baseLink } from '@/consts/urls.const';
-import { DriverStandings, RacesDetails, RaceWinner, TableRace } from '@/types/scraped.type';
+import {
+    DriverStandings,
+    RaceEvent,
+    RacesDetails,
+    RaceWinner,
+    TableRace
+} from '@/types/scraped.type';
 import { StartEndDates } from '@/types/utils.type';
 import * as cheerio from 'cheerio';
 
@@ -68,6 +74,13 @@ export function assignPointsToRaces(
     return races;
 }
 
+/**
+ *
+ * @param {number} year
+ * @param {string} pageContent
+ * @param {boolean} racesDetails
+ * @returns {DriverStandings}
+ */
 export function getStandingsTable(
     year: number,
     pageContent: string,
@@ -97,6 +110,14 @@ export function getStandingsTable(
     return driverStandings;
 }
 
+/**
+ *
+ * @param {string} driver
+ * @param {number} year
+ * @param {string} pageContent
+ * @param {boolean} racesDetails
+ * @returns
+ */
 export function assignStandingsValues(
     driver: string[],
     year: number,
@@ -125,6 +146,12 @@ export function getSeasonId(year: number): number {
     return 174 + (year - 2017);
 }
 
+/**
+ *
+ * @param {string} htmlContent
+ * @param {number} [i=0]
+ * @returns {boolean}
+ */
 export function getCalendarDriver(htmlContent: string, i: number = 0): RaceWinner {
     const $ = cheerio.load(htmlContent);
 
@@ -137,6 +164,12 @@ export function getCalendarDriver(htmlContent: string, i: number = 0): RaceWinne
     };
 }
 
+/**
+ *
+ * @param {string} htmlContent
+ * @param {number} [i=0]
+ * @returns {boolean}
+ */
 export function isCalendarDriverDefined(htmlContent: string, i: number = 0): boolean {
     const $ = cheerio.load(htmlContent);
     if (
@@ -147,6 +180,11 @@ export function isCalendarDriverDefined(htmlContent: string, i: number = 0): boo
     return false;
 }
 
+/**
+ *
+ * @param {string} htmlContent
+ * @returns {RaceWinner[]}
+ */
 export function getRaceWinnersCalendar(htmlContent: string): RaceWinner[] {
     const winners: RaceWinner[] = [];
     for (let i = 0; i < 2; i++) {
@@ -155,4 +193,26 @@ export function getRaceWinnersCalendar(htmlContent: string): RaceWinner[] {
         }
     }
     return winners;
+}
+
+/**
+ *
+ * @param {string} htmlContent
+ * @returns {EventInfo[]}
+ */
+export function getCalendarEvent(htmlContent: string, year: number): RaceEvent {
+    const $ = cheerio.load(htmlContent);
+    const round = $('p.h6').text();
+    const dateObj = {
+        start: $('.date .start-date').text(),
+        end: $('.date .end-date').text(),
+        month: $('.date .month').text()
+    };
+    const eventName = $('.event-place span.ellipsis').text();
+    return {
+        name: eventName,
+        dates: raceStartEnd(year, `${dateObj.start}-${dateObj.end} ${dateObj.month}`),
+        round: Number(round.slice(round.length - 2)),
+        winners: []
+    };
 }
