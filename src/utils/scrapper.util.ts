@@ -114,3 +114,12 @@ export function assignStandingsValues(
     }
     return driverDetails;
 }
+
+/**
+ *
+ * @param {number} year 2017-now
+ * @returns {number}
+ */
+export function getSeasonId(year: number): number {
+    return 174 + (year - 2017);
+}

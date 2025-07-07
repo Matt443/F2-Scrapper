@@ -20,3 +20,9 @@ export interface RacePoints {
     sprintRace: number | null;
     featureRace: number | null;
 }
+
+export interface RaceEvent {
+    name: string;
+    dates: StartEndDates;
+    round: number;
+}

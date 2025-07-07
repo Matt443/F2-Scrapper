@@ -1,7 +1,7 @@
-import { getTeamStandings } from './scrappers/team-standings.scrapper.js';
+import { getCalendar } from './scrappers/calendar-scrapper.js';
 
 async function f() {
-    console.log(await getTeamStandings(2024, true));
+    console.log(await getCalendar(2024, true));
 }
 
 f();
