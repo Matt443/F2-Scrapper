@@ -194,8 +194,10 @@ export function isCalendarDriverDefined(htmlContent: string, i: number = 0): boo
  * @returns {RaceWinner[]}
  */
 export function getRaceWinnersCalendar(htmlContent: string): RaceWinner[] {
+    const $ = cheerio.load(htmlContent);
+    const driversQuanity = $('.drivers > .col').length;
     const winners: RaceWinner[] = [];
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < driversQuanity; i++) {
         if (isCalendarDriverDefined(htmlContent, i)) {
             winners.push(getCalendarDriver(htmlContent, i));
         }
@@ -220,7 +222,6 @@ export function getCalendarEvent(htmlContent: string, year: number): RaceEvent {
     return {
         name: eventName,
         dates: raceStartEnd(year, `${dateObj.start}-${dateObj.end} ${dateObj.month}`),
-        round: Number(round.slice(round.length - 2)),
-        winners: []
+        round: Number(round.slice(round.length - 2))
     };
 }
