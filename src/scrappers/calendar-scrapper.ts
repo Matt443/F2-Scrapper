@@ -15,8 +15,8 @@ export async function getCalendar(
         const $ = cheerio.load(response.data);
 
         const events: RaceEvent[] = [];
-        $('.calendar-layout .row:nth-child(2) >  .post-race-wrapper').each(function () {
-            const round = $(this).find('.card-post .h6').text();
+        $('.calendar-layout .row:nth-child(2) >  .result-card').each(function () {
+            const round = $(this).find('p.h6').text();
             const dateObj = {
                 start: $(this).find('.date .start-date').text(),
                 end: $(this).find('.date .end-date').text(),
@@ -26,10 +26,11 @@ export async function getCalendar(
 
             events.push({
                 name: eventName,
-                dates: raceStartEnd(year, `${dateObj.start} - ${dateObj.end}${dateObj.month}`),
+                dates: raceStartEnd(year, `${dateObj.start}-${dateObj.end} ${dateObj.month}`),
                 round: Number(round.slice(round.length - 2))
             });
         });
+
         return events;
     } catch (error: unknown) {
         throw new Error(error as string);
