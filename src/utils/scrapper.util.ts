@@ -39,12 +39,18 @@ export function getTableRaces(year: number, pageContent: string): TableRace[] {
  * @returns {StartEndDates}
  */
 export function raceStartEnd(year: number, dateString: string): StartEndDates {
-    const startDate = `${dateString.slice(0, 2)} ${dateString.slice(6)} ${year}`;
-    const endDate = `${dateString.slice(3, 5)} ${dateString.slice(6)} ${year}`;
-    return {
+    const startDay = dateString.slice(0, 2);
+    const endDay = dateString.slice(3, 5);
+    const startDate = `${startDay} ${dateString.slice(6)} ${year}`;
+    const endDate = `${endDay} ${dateString.slice(6)} ${year}`;
+    const startEndObj: StartEndDates = {
         start: new Date(`${startDate} 00:00:00 GMT-0`),
         end: new Date(`${endDate} 23:59:59 GMT-0`)
     };
+
+    if (Number(startDay) - Number(endDay) > 0)
+        startEndObj.start.setMonth(startEndObj.start.getMonth() + 1);
+    return startEndObj;
 }
 
 /**
