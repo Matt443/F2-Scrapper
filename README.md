@@ -38,6 +38,15 @@ npm run dev
 
 ![driver standings](./readme/team-standings.png)
 
+### **3. getCalendar**
+
+| Needed Paramter | Paramter Description                                                      | Default Argument |
+| --------------- | ------------------------------------------------------------------------- | ---------------- |
+| No              | The year from which you want to extract points table for (2017 - current) | current year     |
+| No              | if `winners` property should be attached                                  | `False`          |
+
+![driver standings](./readme/calendar.png)
+
 ## Usage
 
 WARNING: Abusing this library may result in an IP ban from the host website.  
