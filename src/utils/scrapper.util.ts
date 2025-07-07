@@ -1,13 +1,16 @@
 import { baseLink } from '@/consts/urls.const';
 import {
+    allWinnerTypes,
     DriverStandings,
     RaceEvent,
     RacesDetails,
     RaceWinner,
-    TableRace
+    TableRace,
+    WinnerTypes
 } from '@/types/scraped.type';
 import { StartEndDates } from '@/types/utils.type';
 import * as cheerio from 'cheerio';
+import { raceTypeStrategy } from './race-type.strategy.util';
 
 /**
  *
@@ -154,13 +157,18 @@ export function getSeasonId(year: number): number {
  */
 export function getCalendarDriver(htmlContent: string, i: number = 0): RaceWinner {
     const $ = cheerio.load(htmlContent);
+    const winnerType = $(
+        `.drivers .col:nth-child(${i + 1}) .drivers-wrapper .race-position`
+    ).text();
 
+    if (!allWinnerTypes.includes(winnerType)) throw Error('Unknown winner type');
     return {
         name: $(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper span.driver-name`).text(),
         imgLink: $(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper img`).attr('data-src') || '',
         driverLink: `${baseLink}${$(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper a`).attr(
             'href'
-        )}`
+        )}`,
+        raceType: raceTypeStrategy[winnerType as WinnerTypes].returnType()
     };
 }
 

@@ -32,4 +32,14 @@ export interface RaceWinner {
     name: string;
     imgLink: string;
     driverLink: string;
+    raceType: RaceTypes;
 }
+
+export const allWinnerTypes = ['SR WINNER', 'FR WINNER', 'SR1 WINNER', 'SR2 WINNER'];
+export type WinnerTypes = 'SR WINNER' | 'FR WINNER' | 'SR1 WINNER' | 'SR2 WINNER';
+
+export type RaceTypes = 'Sprint' | 'Main Race' | 'Sprint 1' | 'Sprint 2';
+
+export type RaceTypeStrategy = {
+    returnType(): RaceTypes;
+};
