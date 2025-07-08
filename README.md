@@ -216,7 +216,7 @@ npm run dev
     gap: "-",
     int: "-",
     kph: "185.379",
-    lap_set_on: "2024-02-29T12:43:32.000Z",
+    lap_set_on: 2024-02-29T12:43:32.000Z,
     laps: "18",
     name: "I. Hadjar",
     number: 20,
