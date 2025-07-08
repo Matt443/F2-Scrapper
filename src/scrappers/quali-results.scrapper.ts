@@ -1,7 +1,6 @@
 import { DriverQualiResults, ResultsTypes } from '@/types/scraped.type';
-import { filterWithIndex, indexAtFound } from '@/utils/common.util';
 import {
-    findCorrectResults,
+    filterResults,
     findResultsURL,
     getDateResults,
     getQualiPracticeResult
@@ -30,15 +29,10 @@ export async function getQualiResults(
 
         const dateStrings: string[] = getDateResults(resultsPageHTML.data);
 
-        const resultsIndex: number[] = findCorrectResults(
+        const [resultIndexes, foundedIndexes] = filterResults(
             resultsPageHTML.data,
             requestedResultTypes
         );
-
-        const [resultIndexes, foundedIndexes] = filterWithIndex(resultsIndex, indexAtFound) as [
-            number[],
-            number[]
-        ];
 
         const resultsAllQuali = resultIndexes.map((index: number, i: number) => {
             return {

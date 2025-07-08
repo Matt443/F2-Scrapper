@@ -1,6 +1,5 @@
 import { DriverSprintResults, ResultsTypes } from '@/types/scraped.type';
-import { filterWithIndex, indexAtFound } from '@/utils/common.util';
-import { findCorrectResults, findResultsURL, getAnyResults } from '@/utils/scrapper.util';
+import { filterResults, findResultsURL, getAnyResults } from '@/utils/scrapper.util';
 import axios from 'axios';
 
 /**
@@ -22,15 +21,10 @@ export async function getSprintResults(
             'SPRINT RACE 1',
             'SPRINT RACE 2'
         ];
-        const resultsIndex: number[] = findCorrectResults(
+        const [resultIndexes, foundedIndexes] = filterResults(
             resultsPageHTML.data,
             requestedResultTypes
         );
-
-        const [resultIndexes, foundedIndexes] = filterWithIndex(resultsIndex, indexAtFound) as [
-            number[],
-            number[]
-        ];
 
         const resultsAllSprints = resultIndexes.map((index: number, i: number) => {
             return {

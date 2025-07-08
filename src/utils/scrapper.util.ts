@@ -16,7 +16,7 @@ import { StartEndDates } from '@/types/utils.type';
 import * as cheerio from 'cheerio';
 import { raceTypeStrategy } from './race-type.strategy.util';
 import { getCalendar } from '@/scrappers/calendar.scrapper';
-import { arrayToObj } from './common.util';
+import { arrayToObj, filterWithIndex, indexAtFound } from './common.util';
 
 /**
  *
@@ -454,4 +454,21 @@ export function fixQualiResult(
 
     if (Number(startDay) - Number(endDay) > 0) lap_set_on.setMonth(lap_set_on.getMonth() - 1);
     return { ...driver, lap_set_on };
+}
+
+/**
+ *
+ * @param {string} htmlContent
+ * @param {ResultsTypes[]} requestedResultTypes
+ * @returns {[number[], number[]]}
+ */
+export function filterResults(
+    htmlContent: string,
+    requestedResultTypes: ResultsTypes[]
+): [number[], number[]] {
+    const resultsIndex: number[] = findCorrectResults(htmlContent, requestedResultTypes);
+
+    const filterResult = filterWithIndex(resultsIndex, indexAtFound) as [number[], number[]];
+
+    return filterResult;
 }
