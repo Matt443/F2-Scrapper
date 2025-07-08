@@ -24,8 +24,8 @@ export async function getQualiResults(
         const resultsPageHTML = await axios(resultsURL);
         const requestedResultTypes: ResultsTypes[] = [
             'QUALIFYING SESSION',
-            'QUALIFYING A',
-            'QUALIFYING B'
+            'QUALIFYING GROUP A',
+            'QUALIFYING GROUP B'
         ];
 
         const dateStrings: string[] = getDateResults(resultsPageHTML.data);

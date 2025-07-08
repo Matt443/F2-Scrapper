@@ -269,7 +269,7 @@ export function findRaceResults(races: RaceEvent[], searchedName: string): strin
 export async function findResultsURL(year: number, raceId: string | number): Promise<string> {
     let resultsURL = `${staticLinks.results}?raceid=${raceId}`;
     if (Number.isNaN(Number(raceId))) {
-        resultsURL = findRaceResults(await getCalendar(year), 'Sakhir');
+        resultsURL = findRaceResults(await getCalendar(year), raceId as string);
     }
     return resultsURL;
 }
