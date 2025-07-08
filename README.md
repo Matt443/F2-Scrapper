@@ -159,7 +159,7 @@ npm run dev
         gap: "-",
         int: "-",
         kph: "147.794",
-        lap_set_on: "2024-05-23T15:23:01.000Z", // wrapped in quotes
+        lap_set_on: 2024-05-23T15:23:01.000Z,
         laps: "11",
         name: "R. Verschoor",
         number: 22,
@@ -189,7 +189,7 @@ npm run dev
         gap: "-",
         int: "-",
         kph: "147.794",
-        lap_set_on: "2024-05-23T15:23:01.000Z", // wrapped in quotes
+        lap_set_on: 2024-05-23T15:23:01.000Z,
         laps: "11",
         name: "R. Verschoor",
         number: 22,
