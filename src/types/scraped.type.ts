@@ -72,7 +72,21 @@ export interface DriverRaceResult extends DriverBaseResult {
     lap: number;
 }
 
+export interface DriverQualiResult extends DriverBaseResult {
+    laps: number;
+    time: string;
+    gap: string;
+    int: string;
+    kph: string;
+    lap_set_on: Date | string;
+}
+
 export interface DriverSprintResults {
     raceType: ResultsTypes;
     results: DriverRaceResult[];
+}
+
+export interface DriverQualiResults {
+    qualiType: ResultsTypes;
+    results: DriverQualiResult[];
 }

@@ -2,6 +2,7 @@ import { baseLink, staticLinks } from '@/consts/urls.const';
 import {
     allWinnerTypes,
     DriverBaseResult,
+    DriverQualiResult,
     DriverRaceResult,
     DriverStandings,
     RaceEvent,
@@ -342,9 +343,7 @@ export function getBasicsResultsTable(htmlContent: string): DriverBaseResult {
 export function getAnyResults(
     htmlContent: string,
     index: number,
-    otherColumns: string[],
-    fixCallback: (result: DriverRaceResult) => DriverRaceResult = (driver: DriverRaceResult) =>
-        driver
+    otherColumns: string[]
 ): DriverRaceResult[] {
     const $ = cheerio.load(htmlContent);
 
@@ -352,12 +351,9 @@ export function getAnyResults(
 
     const driverResults: DriverRaceResult[] = [];
     $(tablePath).each(function () {
-        const { position, number, name, code, team } = getBasicsResultsTable($(this).html() || '');
-
-        const otherValues: string[] = $(this)
-            .find('td .score-wrapper')
-            .map((_i, el) => $(el).text())
-            .get();
+        const { position, number, name, code, team, otherValues } = getFromResultsTable(
+            $(this).html() || ''
+        );
 
         const driver = {
             position,
@@ -368,13 +364,86 @@ export function getAnyResults(
             ...arrayToObj(otherValues, otherColumns)
         } as DriverRaceResult;
 
-        driverResults.push(fixCallback(driver));
+        driverResults.push(fixRaceResult(driver));
     });
     return driverResults;
 }
 
+export function getQualiPracticeResult(
+    htmlContent: string,
+    index: number,
+    otherColumns: string[],
+    dateStrings: string[]
+) {
+    const $ = cheerio.load(htmlContent);
+
+    const tablePath = `.result-collapsible-wrapper .collapsible:nth-child(${index + 1}) .standings-table table.table tbody tr`;
+
+    const driverResults: DriverQualiResult[] = [];
+    $(tablePath).each(function () {
+        const { position, number, name, code, team, otherValues } = getFromResultsTable(
+            $(this).html() || ''
+        );
+
+        const driver = {
+            position,
+            number,
+            name,
+            code,
+            team,
+            ...arrayToObj(otherValues, otherColumns)
+        } as DriverQualiResult;
+
+        driverResults.push(fixQualiResult(driver, dateStrings));
+    });
+    return driverResults;
+}
+
+export function getFromResultsTable(htmlContent: string) {
+    const $ = cheerio.load(htmlContent);
+    const { position, number, name, code, team } = getBasicsResultsTable(htmlContent);
+
+    const otherValues: string[] = $('.score-wrapper')
+        .map((_i, el) => $(el).text())
+        .get();
+
+    return { position, number, name, code, team, otherValues };
+}
+
+/**
+ *
+ * @param {DriverRaceResult} driver
+ * @returns {DriverRaceResult}
+ */
 export function fixRaceResult(driver: DriverRaceResult): DriverRaceResult {
     driver.laps = Number(driver.laps);
     driver.lap = Number(driver.lap);
     return driver;
+}
+
+/**
+ *
+ * @param {string} htmlContent
+ * @returns {string}
+ */
+export function getDateResults(htmlContent: string): string[] {
+    const $ = cheerio.load(htmlContent);
+    const dateString = $(
+        '.circuit-header-wrapper .country-info .schedule > span:nth-child(2)'
+    ).text();
+
+    return [`${dateString.slice(0, 2)}${dateString.slice(5)}`, dateString.slice(3)];
+}
+
+export function fixQualiResult(
+    driver: DriverQualiResult,
+    dateStrings: string[]
+): DriverQualiResult {
+    const startDay = dateStrings[0].slice(0, 2);
+    const endDay = dateStrings[1].slice(0, 2);
+    let { lap_set_on } = driver;
+    lap_set_on = new Date(`${dateStrings[1]} ${lap_set_on} GMT-0`);
+
+    if (Number(startDay) - Number(endDay) > 0) lap_set_on.setMonth(lap_set_on.getMonth() - 1);
+    return { ...driver, lap_set_on };
 }

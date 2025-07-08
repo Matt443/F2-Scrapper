@@ -1,11 +1,6 @@
 import { DriverSprintResults, ResultsTypes } from '@/types/scraped.type';
 import { filterWithIndex } from '@/utils/common.util';
-import {
-    findCorrectResults,
-    findResultsURL,
-    fixRaceResult,
-    getAnyResults
-} from '@/utils/scrapper.util';
+import { findCorrectResults, findResultsURL, getAnyResults } from '@/utils/scrapper.util';
 import axios from 'axios';
 
 /**
@@ -40,12 +35,15 @@ export async function getSprintResults(
         const resultsAllSprints = resultIndexes.map((index: number, i: number) => {
             return {
                 raceType: requestedResultTypes[foundedIndexes[i]],
-                results: getAnyResults(
-                    resultsPageHTML.data,
-                    index,
-                    ['laps', 'time', 'gap', 'int', 'kph', 'best', 'lap'],
-                    fixRaceResult
-                )
+                results: getAnyResults(resultsPageHTML.data, index, [
+                    'laps',
+                    'time',
+                    'gap',
+                    'int',
+                    'kph',
+                    'best',
+                    'lap'
+                ])
             };
         });
 

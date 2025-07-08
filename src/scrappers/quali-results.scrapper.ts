@@ -1,5 +1,11 @@
-import { DriverRaceResult } from '@/types/scraped.type';
-import { findCorrectResults, findResultsURL, getAnyResults } from '@/utils/scrapper.util';
+import { DriverQualiResults, ResultsTypes } from '@/types/scraped.type';
+import { filterWithIndex } from '@/utils/common.util';
+import {
+    findCorrectResults,
+    findResultsURL,
+    getDateResults,
+    getQualiPracticeResult
+} from '@/utils/scrapper.util';
 import axios from 'axios';
 
 /**
@@ -11,25 +17,41 @@ import axios from 'axios';
 export async function getQualiResults(
     year: number = new Date().getFullYear(),
     raceId: string | number = 'Sakhir'
-): Promise<DriverRaceResult[]> {
+): Promise<DriverQualiResults[]> {
     try {
         const resultsURL = await findResultsURL(year, raceId);
 
         const resultsPageHTML = await axios(resultsURL);
-        const resultsIndex: number[] = findCorrectResults(resultsPageHTML.data, [
+        const requestedResultTypes: ResultsTypes[] = [
             'QUALIFYING SESSION',
             'QUALIFYING A',
             'QUALIFYING B'
-        ]);
+        ];
 
-        return getAnyResults(resultsPageHTML.data, resultsIndex[0], [
-            'laps',
-            'time',
-            'gap',
-            'int',
-            'kph',
-            'lap_set_on'
-        ]);
+        const dateStrings: string[] = getDateResults(resultsPageHTML.data);
+
+        const resultsIndex: number[] = findCorrectResults(
+            resultsPageHTML.data,
+            requestedResultTypes
+        );
+
+        const [resultIndexes, foundedIndexes] = filterWithIndex(
+            resultsIndex,
+            (element: unknown) => typeof element === 'number' && element > -1
+        ) as [number[], number[]];
+
+        const resultsAllQuali = resultIndexes.map((index: number, i: number) => {
+            return {
+                qualiType: requestedResultTypes[foundedIndexes[i]],
+                results: getQualiPracticeResult(
+                    resultsPageHTML.data,
+                    index,
+                    ['laps', 'time', 'gap', 'int', 'kph', 'lap_set_on'],
+                    dateStrings
+                )
+            };
+        });
+        return resultsAllQuali;
     } catch (error: unknown) {
         throw new Error(error as string);
     }
