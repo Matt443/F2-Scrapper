@@ -1,10 +1,5 @@
 import { DriverRaceResult } from '@/types/scraped.type';
-import {
-    findCorrectResults,
-    findResultsURL,
-    fixRaceResult,
-    getAnyResults
-} from '@/utils/scrapper.util';
+import { findCorrectResults, findResultsURL, getAnyResults } from '@/utils/scrapper.util';
 import axios from 'axios';
 
 /**
@@ -13,7 +8,7 @@ import axios from 'axios';
  * @param {string | number} raceId
  * @returns {Promise<DriverRaceResult[]>}
  */
-export async function getRaceResults(
+export async function getQualiResults(
     year: number = new Date().getFullYear(),
     raceId: string | number = 'Sakhir'
 ): Promise<DriverRaceResult[]> {
@@ -21,14 +16,20 @@ export async function getRaceResults(
         const resultsURL = await findResultsURL(year, raceId);
 
         const resultsPageHTML = await axios(resultsURL);
-        const resultsIndex: number[] = findCorrectResults(resultsPageHTML.data, ['FEATURE RACE']);
+        const resultsIndex: number[] = findCorrectResults(resultsPageHTML.data, [
+            'QUALIFYING SESSION',
+            'QUALIFYING A',
+            'QUALIFYING B'
+        ]);
 
-        return getAnyResults(
-            resultsPageHTML.data,
-            resultsIndex[0],
-            ['laps', 'time', 'gap', 'int', 'kph', 'best', 'lap'],
-            fixRaceResult
-        );
+        return getAnyResults(resultsPageHTML.data, resultsIndex[0], [
+            'laps',
+            'time',
+            'gap',
+            'int',
+            'kph',
+            'lap_set_on'
+        ]);
     } catch (error: unknown) {
         throw new Error(error as string);
     }

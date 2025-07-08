@@ -47,7 +47,9 @@ export type ResultsTypes =
     | 'QUALIFYING SESSION'
     | 'FREE PRACTICE'
     | 'SPRINT RACE 1'
-    | 'SPRINT RACE 2';
+    | 'SPRINT RACE 2'
+    | 'QUALIFYING A'
+    | 'QUALIFYING B';
 
 export type RaceTypeStrategy = {
     returnType(): RaceTypes;

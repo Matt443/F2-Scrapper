@@ -342,7 +342,9 @@ export function getBasicsResultsTable(htmlContent: string): DriverBaseResult {
 export function getAnyResults(
     htmlContent: string,
     index: number,
-    otherColumns: string[]
+    otherColumns: string[],
+    fixCallback: (result: DriverRaceResult) => DriverRaceResult = (driver: DriverRaceResult) =>
+        driver
 ): DriverRaceResult[] {
     const $ = cheerio.load(htmlContent);
 
@@ -366,9 +368,13 @@ export function getAnyResults(
             ...arrayToObj(otherValues, otherColumns)
         } as DriverRaceResult;
 
-        driver.laps = Number(driver.laps);
-        driver.lap = Number(driver.lap);
-        driverResults.push(driver);
+        driverResults.push(fixCallback(driver));
     });
     return driverResults;
+}
+
+export function fixRaceResult(driver: DriverRaceResult): DriverRaceResult {
+    driver.laps = Number(driver.laps);
+    driver.lap = Number(driver.lap);
+    return driver;
 }

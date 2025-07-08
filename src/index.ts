@@ -1,6 +1,6 @@
-import { getSprintResults } from './scrappers/sprint-results.scrapper.js';
+import { getQualiResults } from './scrappers/quali-results.scrapper.js';
 
 async function f() {
-    console.log(await getSprintResults(2021));
+    console.log(await getQualiResults(2024));
 }
 f();
