@@ -2,6 +2,12 @@ import { DriverRaceResult } from '@/types/scraped.type';
 import { findCorrectResults, findResultsURL, getAnyResults } from '@/utils/scrapper.util';
 import axios from 'axios';
 
+/**
+ *
+ * @param {number} year
+ * @param {string | number} raceId
+ * @returns {Promise<DriverRaceResult[]>}
+ */
 export async function getRaceResults(
     year: number = new Date().getFullYear(),
     raceId: string | number = 'Sakhir'

@@ -4,6 +4,12 @@ import { getCalendarEvent, getRaceWinnersCalendar, getSeasonId } from '@/utils/s
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 
+/**
+ *
+ * @param {number} year
+ * @param {boolean} [winnerDetails=false]
+ * @returns {Promise<RaceEvent[]>}
+ */
 export async function getCalendar(
     year: number = new Date().getFullYear(),
     winnerDetails: boolean = false

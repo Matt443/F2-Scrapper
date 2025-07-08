@@ -3,6 +3,12 @@ import { DriverStandings } from '@/types/scraped.type';
 import { getSeasonId, getStandingsTable } from '@/utils/scrapper.util';
 import axios from 'axios';
 
+/**
+ *
+ * @param {number} year
+ * @param {boolean} [racesDetails=false]
+ * @returns {Promise<DriverStandings[]}
+ */
 export async function getDriverStandings(
     year: number = new Date().getFullYear(),
     racesDetails: boolean = false

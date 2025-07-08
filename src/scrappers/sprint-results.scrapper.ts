@@ -3,6 +3,12 @@ import { filterWithIndex } from '@/utils/common.util';
 import { findCorrectResults, findResultsURL, getAnyResults } from '@/utils/scrapper.util';
 import axios from 'axios';
 
+/**
+ *
+ * @param {number} year
+ * @param {string | number} raceId
+ * @returns {Promise<DriverRaceResult[]>}
+ */
 export async function getSprintResults(
     year: number = new Date().getFullYear(),
     raceId: string | number = 'Sakhir'
