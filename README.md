@@ -142,7 +142,7 @@ npm run dev
 ...
 ```
 
-### **5. getSprintResults**
+### **6. getSprintResults**
 
 | Needed Paramter | Paramter Description                                                      | Default Argument |
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
@@ -152,21 +152,50 @@ npm run dev
 ```js
 [
   {
-    raceType: "SPRINT RACE",
+    qualiType: "QUALIFYING GROUP A",
     results: [
       {
-        best: "1:46.599",
-        code: "LIN",
+        code: "VER",
         gap: "-",
         int: "-",
-        kph: "193.212",
-        lap: 11,
-        laps: 20,
-        name: "A. Lindblad",
-        number: 4,
+        kph: "147.794",
+        lap_set_on: "2024-05-23T15:23:01.000Z", // wrapped in quotes
+        laps: "11",
+        name: "R. Verschoor",
+        number: 22,
         position: "1",
-        team: "Campos Racing",
-        time: "38:16.059"
+        team: "Trident",
+        time: "1:21.283"
+      }
+    ]
+  }
+...
+```
+
+### **5. getQualiResults**
+
+| Needed Paramter | Paramter Description                                                      | Default Argument |
+| --------------- | ------------------------------------------------------------------------- | ---------------- |
+| No              | The year from which you want to extract points table for (2017 - current) | current year     |
+| No              | Number id of Race Event or event name for example `Sakhir`                | `Sakhir`         |
+
+```js
+[
+  {
+    qualiType: "QUALIFYING GROUP A",
+    results: [
+      {
+        code: "VER",
+        gap: "-",
+        int: "-",
+        kph: "147.794",
+        lap_set_on: "2024-05-23T15:23:01.000Z", // wrapped in quotes
+        laps: "11",
+        name: "R. Verschoor",
+        number: 22,
+        position: "1",
+        team: "Trident",
+        time: "1:21.283"
       }
     ]
   }
