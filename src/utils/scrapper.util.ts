@@ -369,6 +369,14 @@ export function getAnyResults(
     return driverResults;
 }
 
+/**
+ *
+ * @param {string} htmlContent
+ * @param {number} index  - index of div with results
+ * @param {string[]} otherColumns - list of columns to without base informations
+ * @param {string[]} dateStrings
+ * @returns
+ */
 export function getQualiPracticeResult(
     htmlContent: string,
     index: number,

@@ -30,3 +30,12 @@ export function filterWithIndex(
     });
     return [filteredArray, indexes];
 }
+
+/**
+ *
+ * @param {element | unknown} element
+ * @returns {boolean}
+ */
+export function indexAtFound(element: number | unknown): boolean {
+    return typeof element === 'number' && element > -1;
+}
