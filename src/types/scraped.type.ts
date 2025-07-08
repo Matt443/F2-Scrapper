@@ -41,18 +41,26 @@ export type WinnerTypes = 'SR WINNER' | 'FR WINNER' | 'SR1 WINNER' | 'SR2 WINNER
 
 export type RaceTypes = 'Sprint' | 'Main Race' | 'Sprint 1' | 'Sprint 2';
 
-export type ResultsTypes = 'FEATURE RACE' | 'SPRINT RACE' | 'QUALIFYING SESSION' | 'FREE PRACTICE';
+export type ResultsTypes =
+    | 'FEATURE RACE'
+    | 'SPRINT RACE'
+    | 'QUALIFYING SESSION'
+    | 'FREE PRACTICE'
+    | 'SPRINT RACE 1'
+    | 'SPRINT RACE 2';
 
 export type RaceTypeStrategy = {
     returnType(): RaceTypes;
 };
 
-export interface DriverRaceResult {
+export interface DriverBaseResult {
     position: string;
     number: number;
     name: string;
     code: string;
     team: string;
+}
+export interface DriverRaceResult extends DriverBaseResult {
     laps: number;
     time: string;
     gap: string;
@@ -60,4 +68,9 @@ export interface DriverRaceResult {
     kph: string;
     best: string;
     lap: number;
+}
+
+export interface DriverSprintResults {
+    raceType: ResultsTypes;
+    results: DriverRaceResult[];
 }

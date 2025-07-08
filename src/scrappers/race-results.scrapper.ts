@@ -12,11 +12,11 @@ export async function getRaceResults(
         const resultsURL = await findResultsURL(year, raceId);
 
         const resultsPageHTML = await axios(resultsURL);
-        const resultsIndex: number = findCorrectResults(resultsPageHTML.data, 'FEATURE RACE');
+        const resultsIndex: number[] = findCorrectResults(resultsPageHTML.data, ['FEATURE RACE']);
 
         const $ = cheerio.load(resultsPageHTML.data);
 
-        const tablePath = `.result-collapsible-wrapper .collapsible:nth-child(${resultsIndex + 1}) .standings-table table.table tbody tr`;
+        const tablePath = `.result-collapsible-wrapper .collapsible:nth-child(${resultsIndex[0] + 1}) .standings-table table.table tbody tr`;
 
         const driverResults: DriverRaceResult[] = [];
         $(tablePath).each(function () {

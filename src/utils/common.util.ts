@@ -5,3 +5,16 @@ export function arrayToObj(values: Array<unknown>, keys: string[]) {
     keys.map((key: string, index: number) => (obj[key] = values[index]));
     return obj;
 }
+
+export function filterWithIndex(
+    arrayToFilter: unknown[],
+    checkingFunction: (element: unknown) => boolean
+): [Array<unknown>, number[]] {
+    const indexes: number[] = [];
+    const filteredArray = arrayToFilter.filter((element: unknown, index: number) => {
+        const checkingResult = checkingFunction(element);
+        if (checkingResult) indexes.push(index);
+        return checkingResult;
+    });
+    return [filteredArray, indexes];
+}

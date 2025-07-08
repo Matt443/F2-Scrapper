@@ -1,6 +1,8 @@
 import { baseLink, staticLinks } from '@/consts/urls.const';
 import {
     allWinnerTypes,
+    DriverBaseResult,
+    DriverRaceResult,
     DriverStandings,
     RaceEvent,
     RacesDetails,
@@ -13,6 +15,7 @@ import { StartEndDates } from '@/types/utils.type';
 import * as cheerio from 'cheerio';
 import { raceTypeStrategy } from './race-type.strategy.util';
 import { getCalendar } from '@/scrappers/calendar.scrapper';
+import { arrayToObj } from './common.util';
 
 /**
  *
@@ -276,21 +279,48 @@ export async function findResultsURL(year: number, raceId: string | number): Pro
  * @param {ResultsTypes} requestedType
  * @returns {number}
  */
-export function findCorrectResults(resultsHTML: string, requestedType: ResultsTypes): number {
+export function findCorrectResults(resultsHTML: string, requestedTypes: ResultsTypes[]): number[] {
+    const availableResults = getAllResultsTypes(resultsHTML);
+    return ifCorrectResultsExists(availableResults, requestedTypes);
+}
+
+/**
+ *
+ * @param {string} resultsHTML
+ * @returns {ResultsTypes[]}
+ */
+export function getAllResultsTypes(resultsHTML: string): ResultsTypes[] {
     const $ = cheerio.load(resultsHTML);
 
     const availableResults: ResultsTypes[] = [];
     $('.result-collapsible-wrapper h2 > p > span').each(function () {
         availableResults.push($(this).text().trim().toLocaleLowerCase() as ResultsTypes);
     });
-
-    const index = availableResults.indexOf(requestedType.toLocaleLowerCase() as ResultsTypes);
-    if (index === -1) throw Error("Requested type can't be found");
-
-    return index;
+    return availableResults;
 }
 
-export function getBasicsResultsTable(htmlContent: string) {
+/**
+ *
+ * @param {ResultsTypes[]} availableResults
+ * @param {ResultsTypes} requestedType
+ * @returns {number}
+ */
+
+export function ifCorrectResultsExists(
+    availableResults: ResultsTypes[],
+    requestedTypes: ResultsTypes[]
+): number[] {
+    return requestedTypes.map((requestedType: ResultsTypes) => {
+        return availableResults.indexOf(requestedType.toLocaleLowerCase() as ResultsTypes);
+    });
+}
+
+/**
+ *
+ * @param {string} htmlContent
+ * @returns {DriverBaseResult}
+ */
+export function getBasicsResultsTable(htmlContent: string): DriverBaseResult {
     const $ = cheerio.load(htmlContent);
 
     const position = $('div.pos').text();
@@ -300,4 +330,45 @@ export function getBasicsResultsTable(htmlContent: string) {
     const team = $('span.team-name').text();
 
     return { position, number, name, code, team };
+}
+
+/**
+ *
+ * @param {string} htmlContent
+ * @param {number} index - index of div with results
+ * @param {string[]} otherColumns - list of columns to without base informations
+ * @returns {DriverRaceResult[]}
+ */
+export function getAnyResults(
+    htmlContent: string,
+    index: number,
+    otherColumns: string[]
+): DriverRaceResult[] {
+    const $ = cheerio.load(htmlContent);
+
+    const tablePath = `.result-collapsible-wrapper .collapsible:nth-child(${index + 1}) .standings-table table.table tbody tr`;
+
+    const driverResults: DriverRaceResult[] = [];
+    $(tablePath).each(function () {
+        const { position, number, name, code, team } = getBasicsResultsTable($(this).html() || '');
+
+        const otherValues: string[] = $(this)
+            .find('td .score-wrapper')
+            .map((_i, el) => $(el).text())
+            .get();
+
+        const driver = {
+            position,
+            number,
+            name,
+            code,
+            team,
+            ...arrayToObj(otherValues, otherColumns)
+        } as DriverRaceResult;
+
+        driver.laps = Number(driver.laps);
+        driver.lap = Number(driver.lap);
+        driverResults.push(driver);
+    });
+    return driverResults;
 }
