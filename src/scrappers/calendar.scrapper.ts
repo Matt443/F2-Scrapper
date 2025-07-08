@@ -9,8 +9,8 @@ export async function getCalendar(
     winnerDetails: boolean = false
 ): Promise<RaceEvent[]> {
     try {
-        const driverStandingsURL = `${staticLinks.calendar}?seasonid=${getSeasonId(year)}`;
-        const response = await axios(driverStandingsURL);
+        const calendarURL = `${staticLinks.calendar}?seasonid=${getSeasonId(year)}`;
+        const response = await axios(calendarURL);
 
         const $ = cheerio.load(response.data);
 

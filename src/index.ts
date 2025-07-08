@@ -1,8 +1,6 @@
-import { getCalendar } from './scrappers/calendar.scrapper.js';
+import { getRaceResults } from './scrappers/race-results.scrapper.js';
 
 async function f() {
-    const response = await getCalendar(2021, true);
-    response.map((e) => console.log(e.winners));
-    console.log(response);
+    console.log(await getRaceResults(2024));
 }
 f();

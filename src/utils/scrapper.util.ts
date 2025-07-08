@@ -1,16 +1,18 @@
-import { baseLink } from '@/consts/urls.const';
+import { baseLink, staticLinks } from '@/consts/urls.const';
 import {
     allWinnerTypes,
     DriverStandings,
     RaceEvent,
     RacesDetails,
     RaceWinner,
+    ResultsTypes,
     TableRace,
     WinnerTypes
 } from '@/types/scraped.type';
 import { StartEndDates } from '@/types/utils.type';
 import * as cheerio from 'cheerio';
 import { raceTypeStrategy } from './race-type.strategy.util';
+import { getCalendar } from '@/scrappers/calendar.scrapper';
 
 /**
  *
@@ -237,4 +239,53 @@ export function getCalendarEvent(htmlContent: string, year: number): RaceEvent {
 
     if (resultsURL) eventDetails.resultsLink = `${baseLink}${resultsURL}`;
     return eventDetails;
+}
+
+/**
+ *
+ * @param {RaceEvent[]} races
+ * @param {string} searchedName
+ * @returns {string}
+ */
+export function findRaceResults(races: RaceEvent[], searchedName: string): string {
+    const foundedRace = races.find((race: RaceEvent) => {
+        if (race.name.toLocaleLowerCase() === searchedName.toLowerCase()) return true;
+    });
+
+    if (!foundedRace?.resultsLink) throw Error("Results link can't be found.");
+    return foundedRace.resultsLink;
+}
+
+/**
+ *
+ * @param {number} year
+ * @param {string | number} raceId - number example = 1079, string example = Sakhir
+ * @returns {Promise<string>}
+ */
+export async function findResultsURL(year: number, raceId: string | number): Promise<string> {
+    let resultsURL = `${staticLinks.results}?raceId=${raceId}`;
+    if (Number.isNaN(Number(raceId))) {
+        resultsURL = findRaceResults(await getCalendar(year), 'Sakhir');
+    }
+    return resultsURL;
+}
+
+/**
+ *
+ * @param {string} resultsHTML
+ * @param {ResultsTypes} requestedType
+ * @returns {number}
+ */
+export function findCorrectResults(resultsHTML: string, requestedType: ResultsTypes): number {
+    const $ = cheerio.load(resultsHTML);
+
+    const availableResults: ResultsTypes[] = [];
+    $('.result-collapsible-wrapper h2 > p > span').each(function () {
+        availableResults.push($(this).text().trim().toLocaleLowerCase() as ResultsTypes);
+    });
+
+    const index = availableResults.indexOf(requestedType.toLocaleLowerCase() as ResultsTypes);
+    if (index === -1) throw Error("Requested type can't be found");
+
+    return index;
 }

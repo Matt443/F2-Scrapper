@@ -8,8 +8,8 @@ export async function getTeamStandings(
     racesDetails: boolean = false
 ): Promise<DriverStandings[]> {
     try {
-        const driverStandingsURL = `${staticLinks.teamStandings}?seasonId=${getSeasonId(year)}`;
-        const response = await axios(driverStandingsURL);
+        const teamStandingsURL = `${staticLinks.teamStandings}?seasonId=${getSeasonId(year)}`;
+        const response = await axios(teamStandingsURL);
 
         return getStandingsTable(year, response.data, racesDetails);
     } catch (error: unknown) {
