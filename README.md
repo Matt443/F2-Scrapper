@@ -142,7 +142,7 @@ npm run dev
 ...
 ```
 
-### **6. getSprintResults**
+### **5. getSprintResults**
 
 | Needed Paramter | Paramter Description                                                      | Default Argument |
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
@@ -172,7 +172,7 @@ npm run dev
 ...
 ```
 
-### **5. getQualiResults**
+### **6. getQualiResults**
 
 | Needed Paramter | Paramter Description                                                      | Default Argument |
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
@@ -198,6 +198,31 @@ npm run dev
         time: "1:21.283"
       }
     ]
+  }
+...
+```
+
+### **7. getQualiResults**
+
+| Needed Paramter | Paramter Description                                                      | Default Argument |
+| --------------- | ------------------------------------------------------------------------- | ---------------- |
+| No              | The year from which you want to extract points table for (2017 - current) | current year     |
+| No              | Number id of Race Event or event name for example `Sakhir`                | `Sakhir`         |
+
+```js
+[
+  {
+    code: "HAD",
+    gap: "-",
+    int: "-",
+    kph: "185.379",
+    lap_set_on: "2024-02-29T12:43:32.000Z",
+    laps: "18",
+    name: "I. Hadjar",
+    number: 20,
+    position: "1",
+    team: "Campos Racing",
+    time: "1:45.099"
   }
 ...
 ```
