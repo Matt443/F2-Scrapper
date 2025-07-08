@@ -142,6 +142,37 @@ npm run dev
 ...
 ```
 
+### **5. getSprintResults**
+
+| Needed Paramter | Paramter Description                                                      | Default Argument |
+| --------------- | ------------------------------------------------------------------------- | ---------------- |
+| No              | The year from which you want to extract points table for (2017 - current) | current year     |
+| No              | Number id of Race Event or event name for example `Sakhir`                | `Sakhir`         |
+
+```js
+[
+  {
+    raceType: "SPRINT RACE",
+    results: [
+      {
+        best: "1:46.599",
+        code: "LIN",
+        gap: "-",
+        int: "-",
+        kph: "193.212",
+        lap: 11,
+        laps: 20,
+        name: "A. Lindblad",
+        number: 4,
+        position: "1",
+        team: "Campos Racing",
+        time: "38:16.059"
+      }
+    ]
+  }
+...
+```
+
 ## Usage
 
 WARNING: Abusing this library may result in an IP ban from the host website.  
