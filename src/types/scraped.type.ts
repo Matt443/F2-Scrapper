@@ -25,6 +25,7 @@ export interface RaceEvent {
     name: string;
     dates: StartEndDates;
     round: number;
+    resultsLink?: string;
     winners?: RaceWinner[];
 }
 

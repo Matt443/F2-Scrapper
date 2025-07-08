@@ -8,6 +8,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-02-29T00:00:00.000Z,
     },
     "name": "Sakhir",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1064",
     "round": 1,
     "winners": [
       {
@@ -30,6 +31,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-03-07T00:00:00.000Z,
     },
     "name": "Jeddah",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1065",
     "round": 2,
     "winners": [
       {
@@ -52,6 +54,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-03-22T00:00:00.000Z,
     },
     "name": "Melbourne",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1066",
     "round": 3,
     "winners": [
       {
@@ -74,6 +77,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-05-17T00:00:00.000Z,
     },
     "name": "Imola",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1067",
     "round": 4,
     "winners": [
       {
@@ -96,6 +100,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-05-23T00:00:00.000Z,
     },
     "name": "Monaco",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1068",
     "round": 5,
     "winners": [
       {
@@ -118,6 +123,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-06-21T00:00:00.000Z,
     },
     "name": "Barcelona",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1069",
     "round": 6,
     "winners": [
       {
@@ -140,6 +146,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-06-28T00:00:00.000Z,
     },
     "name": "Spielberg",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1070",
     "round": 7,
     "winners": [
       {
@@ -162,6 +169,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-07-05T00:00:00.000Z,
     },
     "name": "Silverstone",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1071",
     "round": 8,
     "winners": [
       {
@@ -184,6 +192,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-07-19T00:00:00.000Z,
     },
     "name": "Budapest",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1072",
     "round": 9,
     "winners": [
       {
@@ -206,6 +215,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-07-26T00:00:00.000Z,
     },
     "name": "Spa-Francorchamps",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1073",
     "round": 10,
     "winners": [
       {
@@ -228,6 +238,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-08-30T00:00:00.000Z,
     },
     "name": "Monza",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1074",
     "round": 11,
     "winners": [
       {
@@ -250,6 +261,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-09-13T00:00:00.000Z,
     },
     "name": "Baku",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1075",
     "round": 12,
     "winners": [
       {
@@ -272,6 +284,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-11-29T00:00:00.000Z,
     },
     "name": "Lusail",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1076",
     "round": 13,
     "winners": [
       {
@@ -294,6 +307,7 @@ exports[`Testing getCalendar function Should return calendar with winners 1`] = 
       "start": 2024-12-06T00:00:00.000Z,
     },
     "name": "Yas Island",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1077",
     "round": 14,
     "winners": [
       {
@@ -321,6 +335,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-02-29T00:00:00.000Z,
     },
     "name": "Sakhir",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1064",
     "round": 1,
   },
   {
@@ -329,6 +344,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-03-07T00:00:00.000Z,
     },
     "name": "Jeddah",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1065",
     "round": 2,
   },
   {
@@ -337,6 +353,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-03-22T00:00:00.000Z,
     },
     "name": "Melbourne",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1066",
     "round": 3,
   },
   {
@@ -345,6 +362,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-05-17T00:00:00.000Z,
     },
     "name": "Imola",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1067",
     "round": 4,
   },
   {
@@ -353,6 +371,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-05-23T00:00:00.000Z,
     },
     "name": "Monaco",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1068",
     "round": 5,
   },
   {
@@ -361,6 +380,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-06-21T00:00:00.000Z,
     },
     "name": "Barcelona",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1069",
     "round": 6,
   },
   {
@@ -369,6 +389,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-06-28T00:00:00.000Z,
     },
     "name": "Spielberg",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1070",
     "round": 7,
   },
   {
@@ -377,6 +398,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-07-05T00:00:00.000Z,
     },
     "name": "Silverstone",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1071",
     "round": 8,
   },
   {
@@ -385,6 +407,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-07-19T00:00:00.000Z,
     },
     "name": "Budapest",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1072",
     "round": 9,
   },
   {
@@ -393,6 +416,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-07-26T00:00:00.000Z,
     },
     "name": "Spa-Francorchamps",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1073",
     "round": 10,
   },
   {
@@ -401,6 +425,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-08-30T00:00:00.000Z,
     },
     "name": "Monza",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1074",
     "round": 11,
   },
   {
@@ -409,6 +434,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-09-13T00:00:00.000Z,
     },
     "name": "Baku",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1075",
     "round": 12,
   },
   {
@@ -417,6 +443,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-11-29T00:00:00.000Z,
     },
     "name": "Lusail",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1076",
     "round": 13,
   },
   {
@@ -425,6 +452,7 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
       "start": 2024-12-06T00:00:00.000Z,
     },
     "name": "Yas Island",
+    "resultsLink": "https://www.fiaformula2.com/Results?raceid=1077",
     "round": 14,
   },
 ]

@@ -168,7 +168,7 @@ export function getCalendarDriver(htmlContent: string, i: number = 0): RaceWinne
     ).text();
 
     if (!allWinnerTypes.includes(winnerType)) throw Error('Unknown winner type');
-    return {
+    const eventDetails: RaceWinner = {
         name: $(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper span.driver-name`).text(),
         imgLink: $(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper img`).attr('data-src') || '',
         driverLink: `${baseLink}${$(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper a`).attr(
@@ -176,6 +176,8 @@ export function getCalendarDriver(htmlContent: string, i: number = 0): RaceWinne
         )}`,
         raceType: raceTypeStrategy[winnerType as WinnerTypes].returnType()
     };
+
+    return eventDetails;
 }
 
 /**
@@ -225,9 +227,14 @@ export function getCalendarEvent(htmlContent: string, year: number): RaceEvent {
         month: $('.date .month').text()
     };
     const eventName = $('.event-place span.ellipsis').text();
-    return {
+    const resultsURL = $('.wrapper a').attr('href');
+
+    const eventDetails: RaceEvent = {
         name: eventName,
         dates: raceStartEnd(year, `${dateObj.start}-${dateObj.end} ${dateObj.month}`),
         round: Number(round.slice(round.length - 2))
     };
+
+    if (resultsURL) eventDetails.resultsLink = `${baseLink}${resultsURL}`;
+    return eventDetails;
 }
