@@ -1,4 +1,10 @@
-export function arrayToObj(values: Array<unknown>, keys: string[]) {
+/**
+ *
+ * @param {unknown[]} values
+ * @param {string[]} keys
+ * @returns {object}
+ */
+export function arrayToObj(values: unknown[], keys: string[]): object {
     if (values.length !== keys.length) throw Error('Values and keys table must have same length');
 
     const obj: Record<string, unknown> = {};
@@ -6,10 +12,16 @@ export function arrayToObj(values: Array<unknown>, keys: string[]) {
     return obj;
 }
 
+/**
+ *
+ * @param {unknown[]} arrayToFilter
+ * @param {(element: unknown) => boolean} checkingFunction
+ * @returns {[unknown[], number[]]}
+ */
 export function filterWithIndex(
     arrayToFilter: unknown[],
     checkingFunction: (element: unknown) => boolean
-): [Array<unknown>, number[]] {
+): [unknown[], number[]] {
     const indexes: number[] = [];
     const filteredArray = arrayToFilter.filter((element: unknown, index: number) => {
         const checkingResult = checkingFunction(element);
