@@ -13,6 +13,7 @@ export async function getRaceResults(
     raceId: string | number = 'Sakhir'
 ): Promise<DriverRaceResult[]> {
     try {
+        // Finding URL with results
         const resultsURL = await findResultsURL(year, raceId);
 
         const resultsPageHTML = await axios(resultsURL);

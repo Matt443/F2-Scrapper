@@ -13,19 +13,23 @@ export async function getSprintResults(
     raceId: string | number = 'Sakhir'
 ): Promise<DriverSprintResults[]> {
     try {
+        // Finding URL with results
         const resultsURL = await findResultsURL(year, raceId);
 
         const resultsPageHTML = await axios(resultsURL);
+        //Defining requested result types
         const requestedResultTypes: ResultsTypes[] = [
             'SPRINT RACE',
             'SPRINT RACE 1',
             'SPRINT RACE 2'
         ];
+        //Filtering result types
         const [resultIndexes, foundedIndexes] = filterResults(
             resultsPageHTML.data,
             requestedResultTypes
         );
 
+        //Getting all founded results
         const resultsAllSprints = resultIndexes.map((index: number, i: number) => {
             return {
                 raceType: requestedResultTypes[foundedIndexes[i]],

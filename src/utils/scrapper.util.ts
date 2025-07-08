@@ -450,7 +450,7 @@ export function fixQualiResult(
     const startDay = dateStrings[0].slice(0, 2);
     const endDay = dateStrings[1].slice(0, 2);
     let { lap_set_on } = driver;
-    lap_set_on = new Date(`${dateStrings[1]} ${lap_set_on} GMT-0`);
+    lap_set_on = new Date(`${dateStrings[0]} ${lap_set_on} GMT-0`);
 
     if (Number(startDay) - Number(endDay) > 0) lap_set_on.setMonth(lap_set_on.getMonth() - 1);
     return { ...driver, lap_set_on };

@@ -18,8 +18,11 @@ export async function getQualiResults(
     raceId: string | number = 'Sakhir'
 ): Promise<DriverQualiResults[]> {
     try {
+        // Finding URL with results
+
         const resultsURL = await findResultsURL(year, raceId);
 
+        //Defining requested result types
         const resultsPageHTML = await axios(resultsURL);
         const requestedResultTypes: ResultsTypes[] = [
             'QUALIFYING SESSION',
@@ -29,11 +32,13 @@ export async function getQualiResults(
 
         const dateStrings: string[] = getDateResults(resultsPageHTML.data);
 
+        //Filtering result types
         const [resultIndexes, foundedIndexes] = filterResults(
             resultsPageHTML.data,
             requestedResultTypes
         );
 
+        //Getting all founded results
         const resultsAllQuali = resultIndexes.map((index: number, i: number) => {
             return {
                 qualiType: requestedResultTypes[foundedIndexes[i]],
