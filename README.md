@@ -20,14 +20,35 @@ npm run dev
 
 ## Functions
 
-### **1. getConstructorStandings**
+### **1. getDriverStandings**
 
 | Needed Paramter | Paramter Description                                                      | Default Argument |
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
 | No              | The year from which you want to extract points table for (2017 - current) | current year     |
 | No              | if `racesDetails` property should be attached                             | `False`          |
 
-![driver standings](./readme/driver-standings.png)
+```js
+[
+  {
+    code: "BOR",
+    name: "G. Bortoleto",
+    points: 214.5,
+    position: 1,
+    racesDetails: [
+      {
+        dates: {
+          end: "2024-03-02T23:59:59.000Z",
+          start: "2024-02-29T00:00:00.000Z"
+        },
+        featureRace: 12,
+        flagSrc: "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
+        name: "Sakhir",
+        sprintRace: 3
+      }
+    ]
+  }
+...
+```
 
 ### **2. getTeamStandings**
 
@@ -36,7 +57,28 @@ npm run dev
 | No              | The year from which you want to extract points table for (2017 - current) | current year     |
 | No              | if `racesDetails` property should be attached                             | `False`          |
 
-![driver standings](./readme/team-standings.png)
+```js
+[
+  {
+    code: "Invicta Racing",
+    name: "Invicta Racing",
+    points: 288.5,
+    position: 1,
+    racesDetails: [
+      {
+        dates: {
+          end: "2024-03-02T23:59:59.000Z",
+          start: "2024-02-29T00:00:00.000Z"
+        },
+        featureRace: 18,
+        flagSrc: "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f2/global/flags/BH",
+        name: "Sakhir",
+        sprintRace: 3
+      }
+    ]
+  }
+...
+```
 
 ### **3. getCalendar**
 
@@ -45,7 +87,34 @@ npm run dev
 | No              | The year from which you want to extract points table for (2017 - current) | current year     |
 | No              | if `winners` property should be attached                                  | `False`          |
 
-![driver standings](./readme/calendar.png)
+```js
+[
+  {
+    dates: {
+      end: "2024-03-02T23:59:59.000Z",
+      start: "2024-02-29T00:00:00.000Z"
+    },
+    name: "Sakhir",
+    resultsLink: "https://www.fiaformula2.com/Results?raceid=1064",
+    round: 1,
+    winners: [
+      {
+        driverLink: "https://www.fiaformula2.com/Drivers/1227/Zane-Maloney",
+        imgLink: "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f2/global/drivers/2024/Official%20portraits/05_Maloney",
+        name: "Z. Maloney",
+        raceType: "Sprint"
+      },
+      {
+        driverLink: "https://www.fiaformula2.com/Drivers/1227/Zane-Maloney",
+        imgLink: "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f2/global/drivers/2024/Official%20portraits/05_Maloney",
+        name: "Z. Maloney",
+        raceType: "Main Race"
+      }
+    ]
+  }
+...
+
+```
 
 ### **4. getRaceResults**
 
