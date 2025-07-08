@@ -289,3 +289,15 @@ export function findCorrectResults(resultsHTML: string, requestedType: ResultsTy
 
     return index;
 }
+
+export function getBasicsResultsTable(htmlContent: string) {
+    const $ = cheerio.load(htmlContent);
+
+    const position = $('div.pos').text();
+    const number = Number($('div.car-no').text());
+    const name = $('.driver-name .visible-desktop-up').text();
+    const code = $('.driver-name .visible-desktop-down').text();
+    const team = $('span.team-name').text();
+
+    return { position, number, name, code, team };
+}

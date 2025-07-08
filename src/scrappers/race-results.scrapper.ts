@@ -1,6 +1,6 @@
 import { DriverRaceResult } from '@/types/scraped.type';
 import { arrayToObj } from '@/utils/common.util';
-import { findCorrectResults, findResultsURL } from '@/utils/scrapper.util';
+import { findCorrectResults, findResultsURL, getBasicsResultsTable } from '@/utils/scrapper.util';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 
@@ -20,11 +20,9 @@ export async function getRaceResults(
 
         const driverResults: DriverRaceResult[] = [];
         $(tablePath).each(function () {
-            const position = $(this).find('td div.pos').text();
-            const number = Number($(this).find('td div.car-no').text());
-            const name = $(this).find('td .driver-name .visible-desktop-up').text();
-            const code = $(this).find('td .driver-name .visible-desktop-down').text();
-            const team = $(this).find('td span.team-name').text();
+            const { position, number, name, code, team } = getBasicsResultsTable(
+                $(this).html() || ''
+            );
 
             const otherValues: string[] = $(this)
                 .find('td .score-wrapper')
