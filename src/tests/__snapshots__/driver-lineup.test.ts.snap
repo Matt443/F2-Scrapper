@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Testing getDriverLineup function Should return driver standings without racesDetails 1`] = `
+[
+  {
+    "carLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/01Invicta_025_1500k-00T",
+    "drivers": [
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1256/Leonardo-Fornaroli",
+        "name": "L. Fornaroli",
+        "position": 1,
+      },
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1232/Roman-Stanek",
+        "name": "R. Stanek",
+        "position": 2,
+      },
+    ],
+    "infoLink": "https://www.fiaformula2.com/Teams/225/Invicta-Racing",
+    "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_VirtuosiRacing_2",
+    "name": "Invicta Racing",
+  },
+  {
+    "carLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/03Campos_025_1500k-00T",
+    "drivers": [
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1243/Josep-Maria-Marti",
+        "name": "J. Martí",
+        "position": 3,
+      },
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1257/Arvid-Lindblad",
+        "name": "A. Lindblad",
+        "position": 4,
+      },
+    ],
+    "infoLink": "https://www.fiaformula2.com/Teams/217/Campos-Racing",
+    "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_Campos",
+    "name": "Campos Racing",
+  },
+  {
+    "carLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/06MP_025_1500k-00T",
+    "drivers": [
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1247/Oliver-Goethe",
+        "name": "O. Goethe",
+        "position": 5,
+      },
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1215/Richard-Verschoor",
+        "name": "R. Verschoor",
+        "position": 6,
+      },
+    ],
+    "infoLink": "https://www.fiaformula2.com/Teams/214/MP-Motorsport",
+    "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_MPMotorsport022",
+    "name": "MP Motorsport",
+  },
+  {
+    "carLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/08Hitech_025_1500k-00T",
+    "drivers": [
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1251/Luke-Browning",
+        "name": "L. Browning",
+        "position": 7,
+      },
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1252/Dino-Beganovic",
+        "name": "D. Beganovic",
+        "position": 8,
+      },
+    ],
+    "infoLink": "https://www.fiaformula2.com/Teams/228/Hitech-TGR",
+    "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_Hitech024",
+    "name": "Hitech TGR",
+  },
+  {
+    "carLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/09PREMA_025_1500k-02",
+    "drivers": [
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1258/Sebastian-Montoya",
+        "name": "S. Montoya",
+        "position": 9,
+      },
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1249/Gabriele-Mini",
+        "name": "G. Minì",
+        "position": 10,
+      },
+    ],
+    "infoLink": "https://www.fiaformula2.com/Teams/219/PREMA-Racing",
+    "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/2019/Team-Logo_PREMA",
+    "name": "PREMA Racing",
+  },
+  {
+    "carLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/11DAMS_025_1500k-00T",
+    "drivers": [
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1234/Jak-Crawford",
+        "name": "J. Crawford",
+        "position": 11,
+      },
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1231/Kush-Maini",
+        "name": "K. Maini",
+        "position": 12,
+      },
+    ],
+    "infoLink": "https://www.fiaformula2.com/Teams/209/DAMS-Lucas-Oil",
+    "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_DAMS_LucasOil-024",
+    "name": "DAMS Lucas Oil",
+  },
+  {
+    "carLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/14ART_025_1500k-02",
+    "drivers": [
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1235/Victor-Martins",
+        "name": "V. Martins",
+        "position": 14,
+      },
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1241/Ritomo-Miyata",
+        "name": "R. Miyata",
+        "position": 15,
+      },
+    ],
+    "infoLink": "https://www.fiaformula2.com/Teams/207/ART-Grand-Prix",
+    "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/2019/Team-Logo_ART",
+    "name": "ART Grand Prix",
+  },
+  {
+    "carLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/16Rodin_025_1500k-01-2",
+    "drivers": [
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1225/Amaury-Cordeel",
+        "name": "A. Cordeel",
+        "position": 16,
+      },
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1260/Alexander-Dunne",
+        "name": "A. Dunne",
+        "position": 17,
+      },
+    ],
+    "infoLink": "https://www.fiaformula2.com/Teams/211/Rodin-Motorsport",
+    "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_RodinMotorsport",
+    "name": "Rodin Motorsport",
+  },
+  {
+    "carLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/21AIX_025_1500k-00T",
+    "drivers": [
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1244/Joshua-Durksen",
+        "name": "J. Dürksen",
+        "position": 20,
+      },
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1254/Cian-Shields",
+        "name": "C. Shields",
+        "position": 21,
+      },
+    ],
+    "infoLink": "https://www.fiaformula2.com/Teams/230/AIX-Racing",
+    "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_AIXRacing",
+    "name": "AIX Racing",
+  },
+  {
+    "carLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/23Trident_025_1500k-00T",
+    "drivers": [
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1259/Sami-Meguetounif",
+        "name": "S. Meguetounif",
+        "position": 22,
+      },
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1253/Max-Esterson",
+        "name": "M. Esterson",
+        "position": 23,
+      },
+    ],
+    "infoLink": "https://www.fiaformula2.com/Teams/205/TRIDENT",
+    "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/2019/Team-Logo_Trident",
+    "name": "TRIDENT",
+  },
+  {
+    "carLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/24VAR_025_1500k-00T",
+    "drivers": [
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1255/John-Bennett",
+        "name": "J. Bennett",
+        "position": 24,
+      },
+      {
+        "imgLink": "https://www.fiaformula2.comundefined",
+        "infoLink": "https://www.fiaformula2.com/Drivers/1245/Rafael-Villagomez",
+        "name": "R. Villagómez",
+        "position": 25,
+      },
+    ],
+    "infoLink": "https://www.fiaformula2.com/Teams/229/Van-Amersfoort-Racing",
+    "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_VAR",
+    "name": "Van Amersfoort Racing",
+  },
+]
+`;
