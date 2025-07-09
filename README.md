@@ -227,6 +227,35 @@ npm run dev
 ...
 ```
 
+### **7. getDriverLineup**
+
+This function doesn’t take any parameters.
+
+```js
+[
+  {
+    carLink: "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f2/global/Cars/2025/01Invicta_025_1500k-00T",
+    drivers: [
+      {
+        imgLink: "https://www.fiaformula2.com/Drivers/1256/Leonardo-Fornaroli",  // Fixed placeholder
+        infoLink: "https://www.fiaformula2.com/Drivers/1256/Leonardo-Fornaroli",
+        name: "L. Fornaroli",
+        position: 1
+      },
+      {
+        imgLink: "https://www.fiaformula2.com/Drivers/1232/Roman-Stanek",  // Fixed placeholder
+        infoLink: "https://www.fiaformula2.com/Drivers/1232/Roman-Stanek",
+        name: "R. Stanek",
+        position: 2
+      }
+    ],
+    infoLink: "https://www.fiaformula2.com/Teams/225/Invicta-Racing",
+    logoLink: "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_VirtuosiRacing_2",
+    name: "Invicta Racing"
+  }
+...
+```
+
 ## Usage
 
 WARNING: Abusing this library may result in an IP ban from the host website.  
