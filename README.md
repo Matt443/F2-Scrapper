@@ -253,6 +253,7 @@ This function doesn’t take any parameters.
     logoLink: "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_VirtuosiRacing_2",
     name: "Invicta Racing"
   }
+
 ...
 ```
 

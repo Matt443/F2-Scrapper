@@ -485,7 +485,7 @@ export function getDriverFromLineup(htmlContent: string): LineupDriver[] {
     const driver: LineupDriver[] = [];
     $('.driver').each(function () {
         const infoLink = baseLink + $(this).find('.image-wrapper').attr('href') || '';
-        const imgLink = baseLink + $(this).find('.image-wrapper a').attr('data-src') || '';
+        const imgLink = $(this).find('.image-wrapper img').attr('data-src') || '';
         const name = $(this).find('.name-wrapper .name').text();
         //???
         const position = Number($(this).find('.name-wrapper .position').text());
