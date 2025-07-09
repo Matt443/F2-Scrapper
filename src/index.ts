@@ -1,6 +1,6 @@
-import { getPracticeResults } from './scrappers/practice-results.scrapper.js';
+import { getDriverLineup } from './scrappers/driver-lineup.scrapper.js';
 
 async function f() {
-    console.log(await getPracticeResults(2024, 'Monaco'));
+    console.log(await getDriverLineup());
 }
 f();
