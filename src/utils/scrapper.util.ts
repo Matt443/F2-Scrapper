@@ -5,6 +5,7 @@ import {
     DriverQualiResult,
     DriverRaceResult,
     DriverStandings,
+    LineupDriver,
     RaceEvent,
     RacesDetails,
     RaceWinner,
@@ -471,4 +472,26 @@ export function filterResults(
     const filterResult = filterWithIndex(resultsIndex, indexAtFound) as [number[], number[]];
 
     return filterResult;
+}
+
+/**
+ *
+ * @param {string} htmlContent
+ * @returns {LineupDriver[]}
+ */
+export function getDriverFromLineup(htmlContent: string): LineupDriver[] {
+    const $ = cheerio.load(htmlContent);
+
+    const driver: LineupDriver[] = [];
+    $('.driver').each(function () {
+        const infoLink = baseLink + $(this).find('.image-wrapper').attr('href') || '';
+        const imgLink = baseLink + $(this).find('.image-wrapper a').attr('data-src') || '';
+        const name = $(this).find('.name-wrapper .name').text();
+        //???
+        const position = Number($(this).find('.name-wrapper .position').text());
+
+        driver.push({ infoLink, imgLink, name, position });
+    });
+
+    return driver;
 }

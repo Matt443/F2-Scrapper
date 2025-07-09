@@ -90,3 +90,18 @@ export interface DriverQualiResults {
     qualiType: ResultsTypes;
     results: DriverQualiResult[];
 }
+
+export interface LineupDriver {
+    name: string;
+    imgLink: string;
+    position: number;
+    infoLink: string;
+}
+
+export interface TeamLineup {
+    name: string;
+    infoLink: string;
+    logoLink: string;
+    carLink: string;
+    drivers: LineupDriver[];
+}
