@@ -114,3 +114,24 @@ export interface HallNameChampion {
 export interface HallDriver extends HallNameChampion {
     imgLink: string;
 }
+
+export interface RaceLength {
+    laps: number;
+    length: string;
+}
+
+export interface CircuitInfo {
+    trackName: string;
+    trackMapImg: string;
+    firstRace: number;
+    circuitLength: string;
+    sprintInfo: RaceLength;
+    raceInfo: RaceLength;
+    trackRecord: {
+        time: string;
+        speed: string;
+        driver: string;
+        team: string;
+        year: number;
+    };
+}
