@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Testing getTrackDetails function Should return team standings with racesDetails 1`] = `
+{
+  "circuitLength": "3.337 KM",
+  "firstRace": 2017,
+  "raceInfo": {
+    "laps": 42,
+    "length": "140.154 KM",
+  },
+  "sprintInfo": {
+    "laps": 30,
+    "length": "100.11 KM",
+  },
+  "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/MC",
+  "trackName": "Circuit de Monaco",
+  "trackRecord": {
+    "driver": "Charles Leclerc",
+    "speed": "151.473 KM/H",
+    "team": "PREMA Racing",
+    "time": "1:19.309",
+    "year": 2017,
+  },
+}
+`;
+
+exports[`Testing getTrackDetails function Should return team standings without racesDetails 1`] = `
+{
+  "circuitLength": "4.259 KM",
+  "firstRace": 2022,
+  "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/NL",
+  "trackName": "Circuit Zandvoort",
+}
+`;

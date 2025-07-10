@@ -120,18 +120,19 @@ export interface RaceLength {
     length: string;
 }
 
+export interface TrackRecordInfo {
+    time: string;
+    speed: string;
+    driver: string;
+    team: string;
+    year: number;
+}
 export interface CircuitInfo {
     trackName: string;
     trackMapImg: string;
     firstRace: number;
     circuitLength: string;
-    sprintInfo: RaceLength;
-    raceInfo: RaceLength;
-    trackRecord: {
-        time: string;
-        speed: string;
-        driver: string;
-        team: string;
-        year: number;
-    };
+    sprintInfo?: RaceLength;
+    raceInfo?: RaceLength;
+    trackRecord?: TrackRecordInfo;
 }

@@ -8,10 +8,12 @@ import {
     HallNameChampion,
     LineupDriver,
     RaceEvent,
+    RaceLength,
     RacesDetails,
     RaceWinner,
     ResultsTypes,
     TableRace,
+    TrackRecordInfo,
     WinnerTypes
 } from '@/types/scraped.type';
 import { StartEndDates } from '@/types/utils.type';
@@ -513,4 +515,48 @@ export function hallIsChampion(nameString: string): HallNameChampion {
     }
 
     return { name: nameString };
+}
+
+/**
+ *
+ * @param {string} htmlContent
+ * @param {string} recordDesc
+ * @returns {TrackRecordInfo}
+ */
+export function assignTrackRecord(htmlContent: string, recordDesc: string): TrackRecordInfo {
+    const $ = cheerio.load(htmlContent);
+    const recordTime = $('.circuit-information-row .circuit-records .value').text();
+    const speed = recordDesc.slice(0, recordDesc.indexOf('H') + 1);
+    const recordDriver = recordDesc.slice(recordDesc.indexOf('H') + 4, recordDesc.indexOf('(') - 1);
+    const recordTeam = recordDesc.slice(recordDesc.indexOf('(') + 1, recordDesc.indexOf(')'));
+    const recordYear = Number(recordDesc.slice(recordDesc.length - 4));
+    const trackRecord: TrackRecordInfo = {
+        time: recordTime,
+        speed,
+        driver: recordDriver,
+        team: recordTeam,
+        year: recordYear
+    };
+
+    return trackRecord;
+}
+
+/**
+ *
+ * @param {string[]} circuitInformations
+ * @returns {{sprintInfo: RaceLength, raceInfo: RaceLength}}}
+ */
+export function assignTrackAdvancedInformation(circuitInformations: string[]): {
+    sprintInfo: RaceLength;
+    raceInfo: RaceLength;
+} {
+    const sprintInfo = {
+        laps: Number(circuitInformations[2].slice(0, 3)),
+        length: circuitInformations[3]
+    };
+    const raceInfo = {
+        laps: Number(circuitInformations[4].slice(0, 3)),
+        length: circuitInformations[5]
+    };
+    return { sprintInfo, raceInfo };
 }
