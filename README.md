@@ -306,7 +306,7 @@ In some cases `trackRecord`, `sprintInfo` and `raceInfo` properties are not defi
     team: "PREMA Racing",
     time: "1:19.309",
     year: 2017,
-  },
+  }
 }
 ```
 
