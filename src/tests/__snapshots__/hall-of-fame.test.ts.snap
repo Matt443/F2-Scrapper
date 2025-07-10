@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Testing getHallOfFame function Should return hall of fame 1`] = `
+[
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/articles/2025/01_January/0U0A6630_Hq9SC6w9",
+    "name": "Isack Hadjar",
+  },
+  {
+    "champion": 2024,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/articles/2025/01_January/IMG_2999_ERsMp9ho",
+    "name": "Gabriel Bortoleto",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/0U0A5692_dztKqFDZ",
+    "name": "Andrea Kimi Antonelli",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/0U0A9925A_nHQqC1fV",
+    "name": "Franco Colapinto",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/GettyImages-1470534207",
+    "name": "Jack Doohan",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/AJ0I0831_WOq1gJ5A",
+    "name": "Oliver Bearman",
+  },
+  {
+    "champion": 2023,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/GettyImages-1307954884",
+    "name": "Théo Pourchaire",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/F2_Lawson-BRYN2628_cf3",
+    "name": "Liam Lawson",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/F2_Sargeant-BRYN3187_9892f064-5184",
+    "name": "Logan Sargeant",
+  },
+  {
+    "champion": 2022,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/articles/2022/10_October/BRYN6989_8196c21f-b20c-483c-b2db-47a0f032648f",
+    "name": "Felipe Drugovich",
+  },
+  {
+    "champion": 2021,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/drivers/2021/Piastri_Std_022",
+    "name": "Oscar Piastri",
+  },
+  {
+    "champion": 2020,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/drivers/2020/_R3I4652",
+    "name": "Mick Schumacher",
+  },
+  {
+    "champion": 2019,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/F2-HallFame_DeVries",
+    "name": "Nyck de Vries",
+  },
+  {
+    "champion": 2018,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/F2-HallFame_Russell",
+    "name": "George Russell",
+  },
+  {
+    "champion": 2017,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/F2-HallFame_Leclerc",
+    "name": "Charles Leclerc",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/drivers/2021/ZHO_Standard009",
+    "name": "Zhou Guanyu ",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/F2-HallFame_Tsunoda",
+    "name": "Yuki Tsunoda",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/F2-HallFame_Latifi",
+    "name": "Nicholas Latifi",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/F2-HallFame_Norris",
+    "name": "Lando Norris",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/F2-HallFame_Albon",
+    "name": "Alexander Albon",
+  },
+]
+`;
