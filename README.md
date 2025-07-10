@@ -255,7 +255,25 @@ This function doesn’t take any parameters.
       infoLink: "https://www.fiaformula2.com/Teams/225/Invicta-Racing",
       logoLink: "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_VirtuosiRacing_2",
       name: "Invicta Racing"
-    },*
+    },
+...
+```
+
+### **9. getHallOfFame**
+
+This function doesn’t take any parameters.
+
+```js
+[
+  {
+    imgLink: "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/articles/2025/01_January/0U0A6630_Hq9SC6w9",
+    name: "Isack Hadjar"
+  },
+  {
+    champion: 2024,
+    imgLink: "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/articles/2025/01_January/IMG_2999_ERsMp9ho",
+    name: "Gabriel Bortoleto"
+  },
 ...
 ```
 
