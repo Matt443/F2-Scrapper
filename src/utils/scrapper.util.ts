@@ -5,6 +5,7 @@ import {
     DriverQualiResult,
     DriverRaceResult,
     DriverStandings,
+    HallNameChampion,
     LineupDriver,
     RaceEvent,
     RacesDetails,
@@ -494,4 +495,22 @@ export function getDriverFromLineup(htmlContent: string): LineupDriver[] {
     });
 
     return driver;
+}
+
+/**
+ *
+ * @param {string} nameString
+ * @returns {HallNameChampion}
+ */
+export function hallIsChampion(nameString: string): HallNameChampion {
+    const champion = nameString.slice(nameString.length - 8);
+
+    if (champion.toLocaleUpperCase() === 'CHAMPION') {
+        return {
+            name: nameString.slice(0, nameString.length - 16),
+            champion: Number(nameString.slice(nameString.length - 13, nameString.length - 9))
+        };
+    }
+
+    return { name: nameString };
 }

@@ -1,6 +1,6 @@
-import { getDriverLineup } from './scrappers/driver-lineup.scrapper.js';
+import { getHallOfFame } from './scrappers/hall-of-fame.scrapper.js';
 
 async function f() {
-    console.log(await getDriverLineup());
+    console.log(await getHallOfFame());
 }
 f();

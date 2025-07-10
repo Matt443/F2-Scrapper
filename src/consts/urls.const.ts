@@ -14,3 +14,6 @@ export const staticLinks: StaticLinks = {
 };
 
 export const baseLink = 'https://www.fiaformula2.com';
+
+export const hallOfFameLink =
+    'https://www.fiaformula2.com/Latest/Tag/7qxt08zINzXMSGfrzTzDys/Hall-of-Fame';

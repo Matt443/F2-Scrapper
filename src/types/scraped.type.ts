@@ -105,3 +105,12 @@ export interface TeamLineup {
     carLink: string;
     drivers: LineupDriver[];
 }
+
+export interface HallNameChampion {
+    name: string;
+    champion?: number;
+}
+
+export interface HallDriver extends HallNameChampion {
+    imgLink: string;
+}
