@@ -277,6 +277,39 @@ This function doesn’t take any parameters.
 ...
 ```
 
+### **10. getTrackDetails**
+
+| Needed Paramter | Paramter Description                                                      | Default Argument |
+| --------------- | ------------------------------------------------------------------------- | ---------------- |
+| Yes             | Number id of Race Event or event name for example `Sakhir`                | `Sakhir`         |
+| No              | The year from which you want to extract points table for (2017 - current) | current year     |
+
+In some cases `trackRecord`, `sprintInfo` and `raceInfo` properties are not defined. See [Zandvoort](https://www.fiaformula2.com/Results?raceid=1045)
+
+```js
+{
+  circuitLength: "3.337 KM",
+  firstRace: 2017,
+  raceInfo: {
+    laps: 42,
+    length: "140.154 KM",
+  },
+  sprintInfo: {
+    laps: 30,
+    length: "100.11 KM",
+  },
+  trackMapImg: "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/MC",
+  trackName: "Circuit de Monaco",
+  trackRecord: {
+    driver: "Charles Leclerc",
+    speed: "151.473 KM/H",
+    team: "PREMA Racing",
+    time: "1:19.309",
+    year: 2017,
+  },
+}
+```
+
 ## Usage
 
 WARNING: Abusing this library may result in an IP ban from the host website.  
