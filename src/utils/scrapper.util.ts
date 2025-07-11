@@ -1,4 +1,3 @@
-import { baseLink, staticLinks } from '@/consts/urls.const';
 import {
     allWinnerTypes,
     DriverBaseResult,
@@ -21,6 +20,7 @@ import * as cheerio from 'cheerio';
 import { raceTypeStrategy } from './race-type.strategy.util';
 import { getCalendar } from '@/scrappers/calendar.scrapper';
 import { arrayToObj, filterWithIndex, indexAtFound } from './common.util';
+import { getDynamicLinks, getStaticLinks } from '@/consts/urls.const';
 
 /**
  *
@@ -171,7 +171,11 @@ export function getSeasonId(year: number): number {
  * @param {number} [i=0]
  * @returns {boolean}
  */
-export function getCalendarDriver(htmlContent: string, i: number = 0): RaceWinner {
+export function getCalendarDriver(
+    htmlContent: string,
+    i: number = 0,
+    f3Results: boolean
+): RaceWinner {
     const $ = cheerio.load(htmlContent);
     const winnerType = $(
         `.drivers .col:nth-child(${i + 1}) .drivers-wrapper .race-position`
@@ -181,9 +185,9 @@ export function getCalendarDriver(htmlContent: string, i: number = 0): RaceWinne
     const eventDetails: RaceWinner = {
         name: $(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper span.driver-name`).text(),
         imgLink: $(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper img`).attr('data-src') || '',
-        driverLink: `${baseLink}${$(`.drivers .col:nth-child(${i + 1}) .drivers-wrapper a`).attr(
-            'href'
-        )}`,
+        driverLink: `${getStaticLinks(f3Results).base}${$(
+            `.drivers .col:nth-child(${i + 1}) .drivers-wrapper a`
+        ).attr('href')}`,
         raceType: raceTypeStrategy[winnerType as WinnerTypes].returnType()
     };
 
@@ -211,13 +215,13 @@ export function isCalendarDriverDefined(htmlContent: string, i: number = 0): boo
  * @param {string} htmlContent
  * @returns {RaceWinner[]}
  */
-export function getRaceWinnersCalendar(htmlContent: string): RaceWinner[] {
+export function getRaceWinnersCalendar(htmlContent: string, f3Results: boolean): RaceWinner[] {
     const $ = cheerio.load(htmlContent);
     const driversQuanity = $('.drivers > .col').length;
     const winners: RaceWinner[] = [];
     for (let i = 0; i < driversQuanity; i++) {
         if (isCalendarDriverDefined(htmlContent, i)) {
-            winners.push(getCalendarDriver(htmlContent, i));
+            winners.push(getCalendarDriver(htmlContent, i, f3Results));
         }
     }
     return winners;
@@ -228,7 +232,7 @@ export function getRaceWinnersCalendar(htmlContent: string): RaceWinner[] {
  * @param {string} htmlContent
  * @returns {EventInfo[]}
  */
-export function getCalendarEvent(htmlContent: string, year: number): RaceEvent {
+export function getCalendarEvent(htmlContent: string, year: number, f3Results: boolean): RaceEvent {
     const $ = cheerio.load(htmlContent);
     const round = $('p.h6').text();
     const dateObj = {
@@ -245,7 +249,7 @@ export function getCalendarEvent(htmlContent: string, year: number): RaceEvent {
         round: Number(round.slice(round.length - 2))
     };
 
-    if (resultsURL) eventDetails.resultsLink = `${baseLink}${resultsURL}`;
+    if (resultsURL) eventDetails.resultsLink = `${getStaticLinks(f3Results).base}${resultsURL}`;
     return eventDetails;
 }
 
@@ -270,8 +274,12 @@ export function findRaceResults(races: RaceEvent[], searchedName: string): strin
  * @param {string | number} raceId - number example = 1079, string example = Sakhir
  * @returns {Promise<string>}
  */
-export async function findResultsURL(year: number, raceId: string | number): Promise<string> {
-    let resultsURL = `${staticLinks.results}?raceid=${raceId}`;
+export async function findResultsURL(
+    year: number,
+    raceId: string | number,
+    f3Results: boolean
+): Promise<string> {
+    let resultsURL = `${getDynamicLinks(f3Results).results}?raceid=${raceId}`;
     if (Number.isNaN(Number(raceId))) {
         resultsURL = findRaceResults(await getCalendar(year), raceId as string);
     }
@@ -482,12 +490,13 @@ export function filterResults(
  * @param {string} htmlContent
  * @returns {LineupDriver[]}
  */
-export function getDriverFromLineup(htmlContent: string): LineupDriver[] {
+export function getDriverFromLineup(htmlContent: string, f3Results: boolean): LineupDriver[] {
     const $ = cheerio.load(htmlContent);
 
     const driver: LineupDriver[] = [];
     $('.driver').each(function () {
-        const infoLink = baseLink + $(this).find('.image-wrapper').attr('href') || '';
+        const infoLink =
+            getStaticLinks(f3Results).base + $(this).find('.image-wrapper').attr('href') || '';
         const imgLink = $(this).find('.image-wrapper img').attr('data-src') || '';
         const name = $(this).find('.name-wrapper .name').text();
         //???

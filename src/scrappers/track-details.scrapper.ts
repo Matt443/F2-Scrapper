@@ -11,14 +11,16 @@ import * as cheerio from 'cheerio';
  *
  * @param {string} raceName - example Melburne, Monaco
  * @param {number} year - 2017-now
+ * @param {boolean} [f3Results=false]
  * @returns {Promise<CircuitInfo>}
  */
 export async function getTrackDetails(
     raceName: string,
-    year: number = new Date().getFullYear()
+    year: number = new Date().getFullYear(),
+    f3Results: boolean = false
 ): Promise<CircuitInfo> {
     try {
-        const resultsURL = await findResultsURL(year, raceName);
+        const resultsURL = await findResultsURL(year, raceName, f3Results);
         const resultsPageHTML = await axios(resultsURL);
 
         const $ = cheerio.load(resultsPageHTML.data);

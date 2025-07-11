@@ -1,12 +1,17 @@
-import { hallOfFameLink } from '@/consts/urls.const';
+import { getStaticLinks } from '@/consts/urls.const';
 import { HallDriver } from '@/types/scraped.type';
 import { hallIsChampion } from '@/utils/scrapper.util';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 
-export async function getHallOfFame(): Promise<HallDriver[]> {
+/**
+ *
+ * @param {boolean} [f3Results=false]
+ * @returns {Promise<HallDriver[]>}
+ */
+export async function getHallOfFame(f3Results: boolean = false): Promise<HallDriver[]> {
     try {
-        const hallOfFameResponse = await axios(hallOfFameLink);
+        const hallOfFameResponse = await axios(getStaticLinks(f3Results).hallOfFame);
 
         const $ = cheerio.load(hallOfFameResponse.data);
 

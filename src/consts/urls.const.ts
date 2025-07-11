@@ -3,17 +3,25 @@ interface StaticLinks {
     teamStandings: string;
     calendar: string;
     results: string;
-    driverLineup: string;
 }
-export const staticLinks: StaticLinks = {
-    driverStandings: 'https://www.fiaformula2.com/Standings/Driver',
-    teamStandings: 'https://www.fiaformula2.com/Standings/Team',
-    calendar: 'https://www.fiaformula2.com/Calendar',
-    results: 'https://www.fiaformula2.com/Results',
-    driverLineup: 'https://www.fiaformula2.com/Teams-and-Drivers'
-};
 
-export const baseLink = 'https://www.fiaformula2.com';
+export function getDynamicLinks(f3Results: boolean): StaticLinks {
+    let series = 2;
+    if (f3Results) series = 3;
+    return {
+        driverStandings: `https://www.fiaformula${series}.com/Standings/Driver`,
+        teamStandings: `https://www.fiaformula${series}.com/Standings/Team`,
+        calendar: `https://www.fiaformula${series}.com/Calendar`,
+        results: `https://www.fiaformula${series}.com/Results`
+    };
+}
 
-export const hallOfFameLink =
-    'https://www.fiaformula2.com/Latest/Tag/7qxt08zINzXMSGfrzTzDys/Hall-of-Fame';
+export function getStaticLinks(f3Results: boolean) {
+    let series = 2;
+    if (f3Results) series = 3;
+    return {
+        base: `https://www.fiaformula${series}.com`,
+        hallOfFame: `https://www.fiaformula${series}.com/Latest/Tag/7qxt08zINzXMSGfrzTzDys/Hall-of-Fame`,
+        driverLineup: `https://www.fiaformula${series}.com/Teams-and-Drivers`
+    };
+}
