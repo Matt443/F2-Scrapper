@@ -6,7 +6,7 @@ A Node.js web scraping tool for extracting data from F2 Website and F3 Website.
 
 ```bash
 git clone https://github.com/Matt443/F2-Scrapper.git
-cd F2-Scrapper
+cd F2F3-Scrapper
 npm install
 ```
 

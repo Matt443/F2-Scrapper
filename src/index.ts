@@ -1,6 +1,10 @@
-import { getTrackDetails } from './scrappers/track-details.scrapper.js';
-
-async function f() {
-    console.log(await getTrackDetails('Zandvoort', 2022, true));
-}
-f();
+export { getDriverStandings } from '@/scrappers/driver-standings.scrappper';
+export { getTeamStandings } from '@/scrappers/team-standings.scrapper';
+export { getCalendar } from '@/scrappers/calendar.scrapper';
+export { getRaceResults } from '@/scrappers/race-results.scrapper';
+export { getSprintResults } from '@/scrappers/sprint-results.scrapper';
+export { getQualiResults } from '@/scrappers/quali-results.scrapper';
+export { getPracticeResults } from '@/scrappers/practice-results.scrapper';
+export { getDriverLineup } from '@/scrappers/driver-lineup.scrapper';
+export { getHallOfFame } from '@/scrappers/hall-of-fame.scrapper';
+export { getTrackDetails } from '@/scrappers/track-details.scrapper';
