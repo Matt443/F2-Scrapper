@@ -1,6 +1,6 @@
-import { getPracticeResults } from './scrappers/practice-results.scrapper.js';
+import { getTrackDetails } from './scrappers/track-details.scrapper.js';
 
 async function f() {
-    console.log(await getPracticeResults(2024, 1051, true));
+    console.log(await getTrackDetails('Zandvoort', 2022, true));
 }
 f();

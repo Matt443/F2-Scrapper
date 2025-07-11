@@ -124,7 +124,7 @@ export interface RaceLength {
 
 export interface TrackRecordInfo {
     time: string;
-    speed: string;
+    speed?: string;
     driver: string;
     team: string;
     year: number;

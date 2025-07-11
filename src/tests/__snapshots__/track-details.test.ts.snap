@@ -55,8 +55,7 @@ exports[`Testing getTrackDetails function Should return Zandvoort f3 track detai
   "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/NL",
   "trackName": "Zandvoort Circuit",
   "trackRecord": {
-    "driver": "er",
-    "speed": "Dennis H",
+    "driver": "Dennis Hauger",
     "team": "PREMA Racing",
     "time": "1:24.580",
     "year": 2021,

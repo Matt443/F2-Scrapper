@@ -33,9 +33,20 @@ export function filterWithIndex(
 
 /**
  *
- * @param {element | unknown} element
+ * @param {number | unknown} element
  * @returns {boolean}
  */
 export function indexAtFound(element: number | unknown): boolean {
     return typeof element === 'number' && element > -1;
+}
+
+/**
+ *
+ * @param stringToValidate - data to be validated
+ * @param regex - regex pattern to validate a string
+ * @returns {boolean} - true if data passed a test and false if not
+ */
+export function validationWithRegex(stringToValidate: string, regex: RegExp): boolean {
+    if (regex.test(stringToValidate) === true) return true;
+    return false;
 }

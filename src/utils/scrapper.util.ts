@@ -19,7 +19,7 @@ import { StartEndDates } from '@/types/utils.type';
 import * as cheerio from 'cheerio';
 import { raceTypeStrategy } from './race-type.strategy.util';
 import { getCalendar } from '@/scrappers/calendar.scrapper';
-import { arrayToObj, filterWithIndex, indexAtFound } from './common.util';
+import { arrayToObj, filterWithIndex, indexAtFound, validationWithRegex } from './common.util';
 import { getDynamicLinks, getStaticLinks } from '@/consts/urls.const';
 
 /**
@@ -539,6 +539,7 @@ export function assignTrackRecord(htmlContent: string, recordDesc: string): Trac
     const recordDriver = recordDesc.slice(recordDesc.indexOf('H') + 4, recordDesc.indexOf('(') - 1);
     const recordTeam = recordDesc.slice(recordDesc.indexOf('(') + 1, recordDesc.indexOf(')'));
     const recordYear = Number(recordDesc.slice(recordDesc.length - 4));
+
     const trackRecord: TrackRecordInfo = {
         time: recordTime,
         speed,
@@ -546,6 +547,11 @@ export function assignTrackRecord(htmlContent: string, recordDesc: string): Trac
         team: recordTeam,
         year: recordYear
     };
+    if (validationWithRegex(recordDesc[0], new RegExp('[0-9]'))) {
+        return trackRecord;
+    }
+    delete trackRecord.speed;
+    trackRecord.driver = recordDesc.slice(0, recordDesc.indexOf('(') - 1);
 
     return trackRecord;
 }
