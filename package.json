@@ -24,7 +24,7 @@
     },
     "license": "GPL-3.0-or-later",
     "author": "Matt443",
-    "type": "commonjs",
+    "type": "module",
     "main": "./src/index.js",
     "scripts": {
         "tests": "jest --watchAll --coverage  --detectOpenHandles src/*",

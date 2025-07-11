@@ -1,4 +1,4 @@
-export { getDriverStandings } from '@/scrappers/driver-standings.scrappper';
+export { getDriverStandings } from '@/scrappers/driver-standings.scrapper';
 export { getTeamStandings } from '@/scrappers/team-standings.scrapper';
 export { getCalendar } from '@/scrappers/calendar.scrapper';
 export { getRaceResults } from '@/scrappers/race-results.scrapper';

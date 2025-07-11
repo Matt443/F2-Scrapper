@@ -1,4 +1,4 @@
-import { getDriverStandings } from '@/scrappers/driver-standings.scrappper';
+import { getDriverStandings } from '@/scrappers/driver-standings.scrapper';
 
 describe('Testing getDriverStandigns function', () => {
     it('Should return driver standings without racesDetails', async () => {
