@@ -1,6 +1,9 @@
 {
     "name": "f2f3-scrapper",
-    "version": "0.7.5",
+    "version": "0.7.6",
+    "files": [
+        "dist"
+    ],
     "description": "A scraper to gather data from https://www.fiaformula2.com and https://www.fiaformula3.com",
     "keywords": [
         "f2",
@@ -25,7 +28,7 @@
     "license": "GPL-3.0-or-later",
     "author": "Matt443",
     "type": "module",
-    "main": "./src/index.js",
+    "main": "./dist/index.js",
     "scripts": {
         "tests": "jest --watchAll --coverage  --detectOpenHandles src/*",
         "test": "jest src/*",
@@ -35,14 +38,14 @@
         "prettier": "prettier . --write"
     },
     "dependencies": {
+        "axios": "^1.10.0",
+        "cheerio": "^1.1.0",
         "prettier": "^3.6.2"
     },
     "devDependencies": {
         "@types/jest": "^30.0.0",
         "@types/node": "^24.0.10",
-        "axios": "^1.10.0",
         "babel-jest": "^30.0.4",
-        "cheerio": "^1.1.0",
         "dotenv": "^17.0.1",
         "jest": "^30.0.4",
         "nodemon": "^3.1.10",
