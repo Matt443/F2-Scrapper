@@ -13,7 +13,7 @@ describe('Testing getTrackDetails function', () => {
     it('Should return Zandvoort f3 track details (2022)', async () => {
         expect(await getTrackDetails('Zandvoort', 2022, true)).toMatchSnapshot();
     });
-    it('Should return Zandvoort Monaco details f3', async () => {
+    it('Should return Monaco details f3', async () => {
         expect(await getTrackDetails('Monaco', 2025, true)).toMatchSnapshot();
     });
     it('Should throw because this is wrong year | f3', async () => {

@@ -1,5 +1,29 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
+exports[`Testing getTrackDetails function Should return Monaco details f3 1`] = `
+{
+  "circuitLength": "3.34 KM",
+  "firstRace": 2023,
+  "raceInfo": {
+    "laps": 27,
+    "length": "90.18 KM",
+  },
+  "sprintInfo": {
+    "laps": 23,
+    "length": "76.82 KM",
+  },
+  "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/MC",
+  "trackName": "Circuit de Monaco",
+  "trackRecord": {
+    "driver": "Gabriele Minì",
+    "speed": "144.254 KM/H",
+    "team": "Hitech Pulse-Eight",
+    "time": "1:23.278",
+    "year": 2023,
+  },
+}
+`;
+
 exports[`Testing getTrackDetails function Should return Zandvoort Monaco details 1`] = `
 {
   "circuitLength": "3.337 KM",
@@ -20,30 +44,6 @@ exports[`Testing getTrackDetails function Should return Zandvoort Monaco details
     "team": "PREMA Racing",
     "time": "1:19.309",
     "year": 2017,
-  },
-}
-`;
-
-exports[`Testing getTrackDetails function Should return Zandvoort Monaco details f3 1`] = `
-{
-  "circuitLength": "3.34 KM",
-  "firstRace": 2023,
-  "raceInfo": {
-    "laps": 27,
-    "length": "90.18 KM",
-  },
-  "sprintInfo": {
-    "laps": 23,
-    "length": "76.82 KM",
-  },
-  "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/MC",
-  "trackName": "Circuit de Monaco",
-  "trackRecord": {
-    "driver": "Gabriele Minì",
-    "speed": "144.254 KM/H",
-    "team": "Hitech Pulse-Eight",
-    "time": "1:23.278",
-    "year": 2023,
   },
 }
 `;
