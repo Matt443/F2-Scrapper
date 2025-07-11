@@ -150,22 +150,23 @@ npm run dev
 | No              | Number id of Race Event or event name for example `Sakhir`                | `Sakhir`         |
 
 ```js
-[
+= [
   {
-    qualiType: "QUALIFYING GROUP A",
+    raceType: "SPRINT RACE 1",
     results: [
       {
-        code: "VER",
+        best: "1:22.445",
+        code: "ZHO",
         gap: "-",
         int: "-",
-        kph: "147.794",
-        lap_set_on: 2024-05-23T15:23:01.000Z,
-        laps: "11",
-        name: "R. Verschoor",
-        number: 22,
+        kph: "135.422",
+        lap: 24,
+        laps: 30,
+        name: "G. Zhou",
+        number: 3,
         position: "1",
-        team: "Trident",
-        time: "1:21.283"
+        team: "UNI-Virtuosi",
+        time: "44:21.272"
       }
     ]
   }
@@ -202,7 +203,7 @@ npm run dev
 ...
 ```
 
-### **7. getQualiResults**
+### **7. getPracticeResults**
 
 | Needed Paramter | Paramter Description                                                      | Default Argument |
 | --------------- | ------------------------------------------------------------------------- | ---------------- |

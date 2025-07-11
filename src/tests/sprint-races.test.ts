@@ -2,7 +2,7 @@ import { getSprintResults } from '@/scrappers/sprint-results.scrapper';
 
 describe('Testing getSprintResults function', () => {
     it('Should return sprint results with requsted number id', async () => {
-        expect(await getSprintResults(2021, 1080)).toMatchSnapshot();
+        expect(await getSprintResults(2021, 1028)).toMatchSnapshot();
     });
     it('Should return sprint results with requsted string name of race', async () => {
         expect(await getSprintResults(2024, 'Sakhir')).toMatchSnapshot();
