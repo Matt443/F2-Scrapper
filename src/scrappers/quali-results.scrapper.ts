@@ -29,7 +29,8 @@ export async function getQualiResults(
         const requestedResultTypes: ResultsTypes[] = [
             'QUALIFYING SESSION',
             'QUALIFYING GROUP A',
-            'QUALIFYING GROUP B'
+            'QUALIFYING GROUP B',
+            'QUALIFYING'
         ];
 
         const dateStrings: string[] = getDateResults(resultsPageHTML.data);

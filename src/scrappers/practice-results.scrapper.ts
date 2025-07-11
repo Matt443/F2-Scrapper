@@ -1,6 +1,6 @@
-import { DriverQualiResult } from '@/types/scraped.type';
+import { DriverQualiResult, ResultsTypes } from '@/types/scraped.type';
 import {
-    findCorrectResults,
+    filterResults,
     findResultsURL,
     getDateResults,
     getQualiPracticeResult
@@ -24,13 +24,16 @@ export async function getPracticeResults(
         const resultsURL = await findResultsURL(year, raceId, f3Results);
 
         const resultsPageHTML = await axios(resultsURL);
-        const resultsIndex: number[] = findCorrectResults(resultsPageHTML.data, ['FREE PRACTICE']);
+        const requestedResultTypes: ResultsTypes[] = ['FREE PRACTICE', 'PRACTICE'];
+        const [resultIndexes, _foundedIndexes] = filterResults(
+            resultsPageHTML.data,
+            requestedResultTypes
+        );
 
         const dateStrings: string[] = getDateResults(resultsPageHTML.data);
-
         return getQualiPracticeResult(
             resultsPageHTML.data,
-            resultsIndex[0],
+            resultIndexes[0],
             ['laps', 'time', 'gap', 'int', 'kph', 'lap_set_on'],
             dateStrings
         );

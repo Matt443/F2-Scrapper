@@ -8,6 +8,7 @@ interface StaticLinks {
 export function getDynamicLinks(f3Results: boolean): StaticLinks {
     let series = 2;
     if (f3Results) series = 3;
+
     return {
         driverStandings: `https://www.fiaformula${series}.com/Standings/Driver`,
         teamStandings: `https://www.fiaformula${series}.com/Standings/Team`,

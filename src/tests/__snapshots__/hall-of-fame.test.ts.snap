@@ -1,5 +1,72 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
+exports[`Testing getHallOfFame function Should return f3 hall of fame 1`] = `
+[
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/global/hall_of_fame/GettyImages-1470520419",
+    "name": "Isack Hadjar",
+  },
+  {
+    "champion": 2024,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/articles/2024/08_August/2G7A1873_iMnQTd4r",
+    "name": "Leonardo Fornaroli",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/global/hall_of_fame/GettyImages-1470518262",
+    "name": "Franco Colapinto",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/global/hall_of_fame/GettyImages-1311496475",
+    "name": "Jack Doohan",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/global/hall_of_fame/GettyImages-1470516807",
+    "name": "Oliver Bearman",
+  },
+  {
+    "champion": 2023,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/global/hall_of_fame/JP2_5678",
+    "name": "Gabriel Bortoleto",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/global/hall_of_fame/F3_Lawson_R3I6083",
+    "name": "Liam Lawson",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/global/hall_of_fame/F3_Sargeant_R3I5578",
+    "name": "Logan Sargeant",
+  },
+  {
+    "champion": 2022,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/articles/2022/09_September/VMChampion",
+    "name": "Victor Martins",
+  },
+  {
+    "champion": 2021,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/global/hall_of_fame/Hauger_Hall-of-Fame_2021Champion-1",
+    "name": "Dennis Hauger",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/global/hall_of_fame/_R3I6333",
+    "name": "Théo Pourchaire",
+  },
+  {
+    "champion": 2020,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/global/drivers/2020/_R3I5520",
+    "name": "Oscar Piastri",
+  },
+  {
+    "champion": 2019,
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f3/global/hall_of_fame/Rd3_1017573124-LAT-20190627-_R3I5678-2",
+    "name": "Robert Shwartzman",
+  },
+  {
+    "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_338,w_600/v1/f2/global/hall_of_fame/F2-HallFame_Tsunoda",
+    "name": "Yuki Tsunoda",
+  },
+]
+`;
+
 exports[`Testing getHallOfFame function Should return hall of fame 1`] = `
 [
   {

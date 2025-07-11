@@ -277,11 +277,11 @@ export function findRaceResults(races: RaceEvent[], searchedName: string): strin
 export async function findResultsURL(
     year: number,
     raceId: string | number,
-    f3Results: boolean
+    f3Results: boolean = false
 ): Promise<string> {
     let resultsURL = `${getDynamicLinks(f3Results).results}?raceid=${raceId}`;
     if (Number.isNaN(Number(raceId))) {
-        resultsURL = findRaceResults(await getCalendar(year), raceId as string);
+        resultsURL = findRaceResults(await getCalendar(year, false, f3Results), raceId as string);
     }
     return resultsURL;
 }

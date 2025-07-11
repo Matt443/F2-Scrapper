@@ -49,7 +49,9 @@ export type ResultsTypes =
     | 'SPRINT RACE 1'
     | 'SPRINT RACE 2'
     | 'QUALIFYING GROUP A'
-    | 'QUALIFYING GROUP B';
+    | 'QUALIFYING GROUP B'
+    | 'PRACTICE'
+    | 'QUALIFYING';
 
 export type RaceTypeStrategy = {
     returnType(): RaceTypes;

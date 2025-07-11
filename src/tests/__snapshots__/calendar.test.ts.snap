@@ -457,3 +457,333 @@ exports[`Testing getCalendar function Should return calendar without winners 1`]
   },
 ]
 `;
+
+exports[`Testing getCalendar function Should return f3 calendar with winners 1`] = `
+[
+  {
+    "dates": {
+      "end": 2024-03-02T23:59:59.000Z,
+      "start": 2024-02-29T00:00:00.000Z,
+    },
+    "name": "Sakhir",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1049",
+    "round": 1,
+    "winners": [
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1443/Arvid-Lindblad",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/03_Lindblad",
+        "name": "A. Lindblad",
+        "raceType": "Sprint",
+      },
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1437/Luke-Browning",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/0U0A7363_5YOWFR6b",
+        "name": "L. Browning",
+        "raceType": "Main Race",
+      },
+    ],
+  },
+  {
+    "dates": {
+      "end": 2024-03-24T23:59:59.000Z,
+      "start": 2024-03-22T00:00:00.000Z,
+    },
+    "name": "Melbourne",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1050",
+    "round": 2,
+    "winners": [
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1446/Martinius-Stenshorne",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2025/2025%20Driver%20profiles/14_Stenshorne",
+        "name": "M. Stenshorne",
+        "raceType": "Sprint",
+      },
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1422/Dino-Beganovic",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/01_Beganovic",
+        "name": "D. Beganovic",
+        "raceType": "Main Race",
+      },
+    ],
+  },
+  {
+    "dates": {
+      "end": 2024-05-19T23:59:59.000Z,
+      "start": 2024-05-17T00:00:00.000Z,
+    },
+    "name": "Imola",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1051",
+    "round": 3,
+    "winners": [
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1417/Oliver-Goethe",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/10_Goethe",
+        "name": "O. Goethe",
+        "raceType": "Sprint",
+      },
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1444/Sami-Meguetounif",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/05_Meguetounif",
+        "name": "S. Meguetounif",
+        "raceType": "Main Race",
+      },
+    ],
+  },
+  {
+    "dates": {
+      "end": 2024-05-26T23:59:59.000Z,
+      "start": 2024-05-23T00:00:00.000Z,
+    },
+    "name": "Monaco",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1052",
+    "round": 4,
+    "winners": [
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1425/Nikola-Tsolov",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2025/2025%20Driver%20profiles/12_Tsolov",
+        "name": "N. Tsolov",
+        "raceType": "Sprint",
+      },
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1427/Gabriele-Mini",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/02_Mini",
+        "name": "G. Minì",
+        "raceType": "Main Race",
+      },
+    ],
+  },
+  {
+    "dates": {
+      "end": 2024-06-23T23:59:59.000Z,
+      "start": 2024-06-21T00:00:00.000Z,
+    },
+    "name": "Barcelona",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1053",
+    "round": 5,
+    "winners": [
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1426/Mari-Boya",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2025/2025%20Driver%20profiles/10_Boya",
+        "name": "M. Boya",
+        "raceType": "Sprint",
+      },
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1443/Arvid-Lindblad",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/03_Lindblad",
+        "name": "A. Lindblad",
+        "raceType": "Main Race",
+      },
+    ],
+  },
+  {
+    "dates": {
+      "end": 2024-06-30T23:59:59.000Z,
+      "start": 2024-06-28T00:00:00.000Z,
+    },
+    "name": "Spielberg",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1054",
+    "round": 6,
+    "winners": [
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1425/Nikola-Tsolov",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2025/2025%20Driver%20profiles/12_Tsolov",
+        "name": "N. Tsolov",
+        "raceType": "Sprint",
+      },
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1437/Luke-Browning",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/0U0A7363_5YOWFR6b",
+        "name": "L. Browning",
+        "raceType": "Main Race",
+      },
+    ],
+  },
+  {
+    "dates": {
+      "end": 2024-07-07T23:59:59.000Z,
+      "start": 2024-07-05T00:00:00.000Z,
+    },
+    "name": "Silverstone",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1055",
+    "round": 7,
+    "winners": [
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1443/Arvid-Lindblad",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/03_Lindblad",
+        "name": "A. Lindblad",
+        "raceType": "Sprint",
+      },
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1443/Arvid-Lindblad",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/03_Lindblad",
+        "name": "A. Lindblad",
+        "raceType": "Main Race",
+      },
+    ],
+  },
+  {
+    "dates": {
+      "end": 2024-07-21T23:59:59.000Z,
+      "start": 2024-07-19T00:00:00.000Z,
+    },
+    "name": "Budapest",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1056",
+    "round": 8,
+    "winners": [
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1434/Nikita-Bedrin",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/Bedrin_2024-04-16_F3_Portraits105094_CUDATT1l",
+        "name": "N. Bedrin",
+        "raceType": "Sprint",
+      },
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1425/Nikola-Tsolov",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2025/2025%20Driver%20profiles/12_Tsolov",
+        "name": "N. Tsolov",
+        "raceType": "Main Race",
+      },
+    ],
+  },
+  {
+    "dates": {
+      "end": 2024-07-28T23:59:59.000Z,
+      "start": 2024-07-26T00:00:00.000Z,
+    },
+    "name": "Spa-Francorchamps",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1057",
+    "round": 9,
+    "winners": [
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1422/Dino-Beganovic",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/01_Beganovic",
+        "name": "D. Beganovic",
+        "raceType": "Sprint",
+      },
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1450/Callum-Voisin",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2025/2025%20Driver%20profiles/23_Voisin",
+        "name": "C. Voisin",
+        "raceType": "Main Race",
+      },
+    ],
+  },
+  {
+    "dates": {
+      "end": 2024-09-01T23:59:59.000Z,
+      "start": 2024-08-30T00:00:00.000Z,
+    },
+    "name": "Monza",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1058",
+    "round": 10,
+    "winners": [
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1453/Tim-Tramnitz",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2025/2025%20Driver%20profiles/17_Tramnitz",
+        "name": "T. Tramnitz",
+        "raceType": "Sprint",
+      },
+      {
+        "driverLink": "https://www.fiaformula3.com/Drivers/1444/Sami-Meguetounif",
+        "imgLink": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_169,w_300/v1/f3/global/drivers/2024/2024%20official%20portraits/05_Meguetounif",
+        "name": "S. Meguetounif",
+        "raceType": "Main Race",
+      },
+    ],
+  },
+]
+`;
+
+exports[`Testing getCalendar function Should return f3 calendar without winners 1`] = `
+[
+  {
+    "dates": {
+      "end": 2024-03-02T23:59:59.000Z,
+      "start": 2024-02-29T00:00:00.000Z,
+    },
+    "name": "Sakhir",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1049",
+    "round": 1,
+  },
+  {
+    "dates": {
+      "end": 2024-03-24T23:59:59.000Z,
+      "start": 2024-03-22T00:00:00.000Z,
+    },
+    "name": "Melbourne",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1050",
+    "round": 2,
+  },
+  {
+    "dates": {
+      "end": 2024-05-19T23:59:59.000Z,
+      "start": 2024-05-17T00:00:00.000Z,
+    },
+    "name": "Imola",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1051",
+    "round": 3,
+  },
+  {
+    "dates": {
+      "end": 2024-05-26T23:59:59.000Z,
+      "start": 2024-05-23T00:00:00.000Z,
+    },
+    "name": "Monaco",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1052",
+    "round": 4,
+  },
+  {
+    "dates": {
+      "end": 2024-06-23T23:59:59.000Z,
+      "start": 2024-06-21T00:00:00.000Z,
+    },
+    "name": "Barcelona",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1053",
+    "round": 5,
+  },
+  {
+    "dates": {
+      "end": 2024-06-30T23:59:59.000Z,
+      "start": 2024-06-28T00:00:00.000Z,
+    },
+    "name": "Spielberg",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1054",
+    "round": 6,
+  },
+  {
+    "dates": {
+      "end": 2024-07-07T23:59:59.000Z,
+      "start": 2024-07-05T00:00:00.000Z,
+    },
+    "name": "Silverstone",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1055",
+    "round": 7,
+  },
+  {
+    "dates": {
+      "end": 2024-07-21T23:59:59.000Z,
+      "start": 2024-07-19T00:00:00.000Z,
+    },
+    "name": "Budapest",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1056",
+    "round": 8,
+  },
+  {
+    "dates": {
+      "end": 2024-07-28T23:59:59.000Z,
+      "start": 2024-07-26T00:00:00.000Z,
+    },
+    "name": "Spa-Francorchamps",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1057",
+    "round": 9,
+  },
+  {
+    "dates": {
+      "end": 2024-09-01T23:59:59.000Z,
+      "start": 2024-08-30T00:00:00.000Z,
+    },
+    "name": "Monza",
+    "resultsLink": "https://www.fiaformula3.com/Results?raceid=1058",
+    "round": 10,
+  },
+]
+`;

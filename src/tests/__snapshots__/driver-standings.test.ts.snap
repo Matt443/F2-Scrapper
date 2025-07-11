@@ -3517,3 +3517,3489 @@ exports[`Testing getDriverStandigns function Should return driver standings with
   },
 ]
 `;
+
+exports[`Testing getDriverStandigns function Should return f3 driver standings with racesDetails 1`] = `
+[
+  {
+    "code": "FOR",
+    "name": "L. Fornaroli",
+    "points": 153,
+    "position": 1,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 7,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 8,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 20,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 2,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 15,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 10,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 2,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 15,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 5,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 6,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 1,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 15,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 4,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 15,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 2,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 20,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 4,
+      },
+    ],
+  },
+  {
+    "code": "MIN",
+    "name": "G. Minì",
+    "points": 130,
+    "position": 2,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 8,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 4,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 15,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 5,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 8,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 5,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 27,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 18,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 5,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 19,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 5,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 9,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 2,
+      },
+    ],
+  },
+  {
+    "code": "BRO",
+    "name": "L. Browning",
+    "points": 128,
+    "position": 3,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 25,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 12,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 12,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 16,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 3,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 11,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 27,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 6,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 3,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 8,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 5,
+      },
+    ],
+  },
+  {
+    "code": "LIN",
+    "name": "A. Lindblad",
+    "points": 113,
+    "position": 4,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 4,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 10,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 9,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 6,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 3,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 12,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 25,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 2,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 6,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 25,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 11,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "MAN",
+    "name": "C. Mansell",
+    "points": 112,
+    "position": 5,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 18,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 1,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 1,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 18,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 20,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 12,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 8,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 13,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 6,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 15,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "BEG",
+    "name": "D. Beganovic",
+    "points": 109,
+    "position": 6,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 26,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 10,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 7,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 8,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 5,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 4,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 3,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 15,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 8,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 10,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 7,
+      },
+    ],
+  },
+  {
+    "code": "GOE",
+    "name": "O. Goethe",
+    "points": 94,
+    "position": 7,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 1,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 2,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 6,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 19,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 11,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 1,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 1,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 12,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 8,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 10,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 4,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 8,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 4,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 5,
+      },
+    ],
+  },
+  {
+    "code": "MEG",
+    "name": "S. Meguetounif",
+    "points": 84,
+    "position": 8,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 12,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 1,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 25,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 1,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 3,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 1,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 10,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 25,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 6,
+      },
+    ],
+  },
+  {
+    "code": "TRA",
+    "name": "T. Tramnitz",
+    "points": 81,
+    "position": 9,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 15,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 6,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 9,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 4,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 9,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 1,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 3,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 7,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 7,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 8,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 10,
+      },
+    ],
+  },
+  {
+    "code": "LEO",
+    "name": "N. León",
+    "points": 79,
+    "position": 10,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 8,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 7,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 5,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 2,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 1,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 9,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 18,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 12,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 9,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 6,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "TSO",
+    "name": "N. Tsolov",
+    "points": 75,
+    "position": 11,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 7,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 10,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 8,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 8,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 11,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 6,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 25,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "VOI",
+    "name": "C. Voisin",
+    "points": 67,
+    "position": 12,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 15,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 7,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 8,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 5,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 28,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 4,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "VAN",
+    "name": "L. Van Hoepen",
+    "points": 58,
+    "position": 13,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 10,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 8,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 4,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 8,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 6,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 5,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 6,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 2,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 2,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 1,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 4,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "DUN",
+    "name": "A. Dunne",
+    "points": 50,
+    "position": 14,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 4,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 6,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 9,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 1,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 7,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 1,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 12,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 8,
+      },
+    ],
+  },
+  {
+    "code": "BOY",
+    "name": "M. Boya",
+    "points": 45,
+    "position": 15,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 3,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 6,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 8,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 6,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 5,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 10,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 1,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 4,
+      },
+    ],
+  },
+  {
+    "code": "RAM",
+    "name": "S. Ramos",
+    "points": 44,
+    "position": 16,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 10,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 6,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 1,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 1,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 10,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 4,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 3,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 9,
+      },
+    ],
+  },
+  {
+    "code": "MON",
+    "name": "S. Montoya",
+    "points": 40,
+    "position": 17,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 8,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 3,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 1,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 4,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 18,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 6,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "STE",
+    "name": "M. Stenshorne",
+    "points": 38,
+    "position": 18,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 10,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 7,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 9,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 11,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 1,
+      },
+    ],
+  },
+  {
+    "code": "BED",
+    "name": "N. Bedrin",
+    "points": 25,
+    "position": 19,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 4,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 2,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 6,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 11,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "SMI",
+    "name": "T. Smith",
+    "points": 12,
+    "position": 20,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 12,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "EST",
+    "name": "M. Esterson",
+    "points": 11,
+    "position": 21,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 5,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 6,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "WUR",
+    "name": "C. Wurz",
+    "points": 10,
+    "position": 22,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 10,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "WIS",
+    "name": "P. Wisnicki",
+    "points": 10,
+    "position": 23,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 10,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "INT",
+    "name": "T. Inthraphuvasak",
+    "points": 9,
+    "position": 24,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 9,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "LOA",
+    "name": "J. Loake",
+    "points": 8,
+    "position": 25,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 2,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 6,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "ZAG",
+    "name": "M. Zagazeta",
+    "points": 8,
+    "position": 26,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 8,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "SZT",
+    "name": "K. Sztuka",
+    "points": 6,
+    "position": 27,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 6,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "DUF",
+    "name": "J. Dufek",
+    "points": 1,
+    "position": 28,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 1,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "FLO",
+    "name": "S. Floersch",
+    "points": 0,
+    "position": 29,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "SHI",
+    "name": "C. Shields",
+    "points": 0,
+    "position": 30,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-03-02T23:59:59.000Z,
+          "start": 2024-02-29T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BH",
+        "name": "Sakhir",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-03-24T23:59:59.000Z,
+          "start": 2024-03-22T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AU",
+        "name": "Melbourne",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-19T23:59:59.000Z,
+          "start": 2024-05-17T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IM",
+        "name": "Imola",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-23T23:59:59.000Z,
+          "start": 2024-06-21T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/ES",
+        "name": "Barcelona",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-06-30T23:59:59.000Z,
+          "start": 2024-06-28T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/AT",
+        "name": "Spielberg",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-21T23:59:59.000Z,
+          "start": 2024-07-19T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/HU",
+        "name": "Budapest",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "TAP",
+    "name": "T. Taponen",
+    "points": 0,
+    "position": 31,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-07-28T23:59:59.000Z,
+          "start": 2024-07-26T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/BE",
+        "name": "Spa-Francorchamps",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "STR",
+    "name": "N. Strømsted",
+    "points": 0,
+    "position": 32,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-09-01T23:59:59.000Z,
+          "start": 2024-08-30T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/IT",
+        "name": "Monza",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "WHA",
+    "name": "J. Wharton",
+    "points": 0,
+    "position": 33,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-07-07T23:59:59.000Z,
+          "start": 2024-07-05T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/GB",
+        "name": "Silverstone",
+        "sprintRace": 0,
+      },
+    ],
+  },
+  {
+    "code": "HED",
+    "name": "J. Hedley",
+    "points": 0,
+    "position": 34,
+    "racesDetails": [
+      {
+        "dates": {
+          "end": 2024-05-26T23:59:59.000Z,
+          "start": 2024-05-23T00:00:00.000Z,
+        },
+        "featureRace": 0,
+        "flagSrc": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_22,w_34/v1/f3/global/flags/MC",
+        "name": "Monaco",
+        "sprintRace": 0,
+      },
+    ],
+  },
+]
+`;
+
+exports[`Testing getDriverStandigns function Should return f3 driver standings without racesDetails 1`] = `
+[
+  {
+    "code": "FOR",
+    "name": "L. Fornaroli",
+    "points": 153,
+    "position": 1,
+  },
+  {
+    "code": "MIN",
+    "name": "G. Minì",
+    "points": 130,
+    "position": 2,
+  },
+  {
+    "code": "BRO",
+    "name": "L. Browning",
+    "points": 128,
+    "position": 3,
+  },
+  {
+    "code": "LIN",
+    "name": "A. Lindblad",
+    "points": 113,
+    "position": 4,
+  },
+  {
+    "code": "MAN",
+    "name": "C. Mansell",
+    "points": 112,
+    "position": 5,
+  },
+  {
+    "code": "BEG",
+    "name": "D. Beganovic",
+    "points": 109,
+    "position": 6,
+  },
+  {
+    "code": "GOE",
+    "name": "O. Goethe",
+    "points": 94,
+    "position": 7,
+  },
+  {
+    "code": "MEG",
+    "name": "S. Meguetounif",
+    "points": 84,
+    "position": 8,
+  },
+  {
+    "code": "TRA",
+    "name": "T. Tramnitz",
+    "points": 81,
+    "position": 9,
+  },
+  {
+    "code": "LEO",
+    "name": "N. León",
+    "points": 79,
+    "position": 10,
+  },
+  {
+    "code": "TSO",
+    "name": "N. Tsolov",
+    "points": 75,
+    "position": 11,
+  },
+  {
+    "code": "VOI",
+    "name": "C. Voisin",
+    "points": 67,
+    "position": 12,
+  },
+  {
+    "code": "VAN",
+    "name": "L. Van Hoepen",
+    "points": 58,
+    "position": 13,
+  },
+  {
+    "code": "DUN",
+    "name": "A. Dunne",
+    "points": 50,
+    "position": 14,
+  },
+  {
+    "code": "BOY",
+    "name": "M. Boya",
+    "points": 45,
+    "position": 15,
+  },
+  {
+    "code": "RAM",
+    "name": "S. Ramos",
+    "points": 44,
+    "position": 16,
+  },
+  {
+    "code": "MON",
+    "name": "S. Montoya",
+    "points": 40,
+    "position": 17,
+  },
+  {
+    "code": "STE",
+    "name": "M. Stenshorne",
+    "points": 38,
+    "position": 18,
+  },
+  {
+    "code": "BED",
+    "name": "N. Bedrin",
+    "points": 25,
+    "position": 19,
+  },
+  {
+    "code": "SMI",
+    "name": "T. Smith",
+    "points": 12,
+    "position": 20,
+  },
+  {
+    "code": "EST",
+    "name": "M. Esterson",
+    "points": 11,
+    "position": 21,
+  },
+  {
+    "code": "WUR",
+    "name": "C. Wurz",
+    "points": 10,
+    "position": 22,
+  },
+  {
+    "code": "WIS",
+    "name": "P. Wisnicki",
+    "points": 10,
+    "position": 23,
+  },
+  {
+    "code": "INT",
+    "name": "T. Inthraphuvasak",
+    "points": 9,
+    "position": 24,
+  },
+  {
+    "code": "LOA",
+    "name": "J. Loake",
+    "points": 8,
+    "position": 25,
+  },
+  {
+    "code": "ZAG",
+    "name": "M. Zagazeta",
+    "points": 8,
+    "position": 26,
+  },
+  {
+    "code": "SZT",
+    "name": "K. Sztuka",
+    "points": 6,
+    "position": 27,
+  },
+  {
+    "code": "DUF",
+    "name": "J. Dufek",
+    "points": 1,
+    "position": 28,
+  },
+  {
+    "code": "FLO",
+    "name": "S. Floersch",
+    "points": 0,
+    "position": 29,
+  },
+  {
+    "code": "SHI",
+    "name": "C. Shields",
+    "points": 0,
+    "position": 30,
+  },
+  {
+    "code": "TAP",
+    "name": "T. Taponen",
+    "points": 0,
+    "position": 31,
+  },
+  {
+    "code": "STR",
+    "name": "N. Strømsted",
+    "points": 0,
+    "position": 32,
+  },
+  {
+    "code": "WHA",
+    "name": "J. Wharton",
+    "points": 0,
+    "position": 33,
+  },
+  {
+    "code": "HED",
+    "name": "J. Hedley",
+    "points": 0,
+    "position": 34,
+  },
+]
+`;

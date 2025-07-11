@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Testing getDriverLineup function Should return driver standings without racesDetails 1`] = `
+exports[`Testing getDriverLineup function Should return f2 driver lineup 1`] = `
 {
   "season": 2025,
   "series": "Formula 2",
@@ -224,6 +224,275 @@ exports[`Testing getDriverLineup function Should return driver standings without
       "infoLink": "https://www.fiaformula2.com/Teams/229/Van-Amersfoort-Racing",
       "logoLink": "https://www.fiaformula2.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_VAR",
       "name": "Van Amersfoort Racing",
+    },
+  ],
+}
+`;
+
+exports[`Testing getDriverLineup function Should return f3 driver lineup 1`] = `
+{
+  "season": 2025,
+  "series": "Formula 3",
+  "teams": [
+    {
+      "carLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f3/global/cars/2025/02PREMA_025F3_1500k-00T",
+      "drivers": [
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/01_Brando_Badoer",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1462/Brando-Badoer",
+          "name": "B. Badoer",
+          "position": 1,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/02_Leon",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1448/Noel-Leon",
+          "name": "N. León",
+          "position": 2,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/03_Ugo",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1463/Ugo-Ugochukwu",
+          "name": "U. Ugochukwu",
+          "position": 3,
+        },
+      ],
+      "infoLink": "https://www.fiaformula3.com/Teams/246/PREMA-Racing",
+      "logoLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f3/global/teams/logos/Team-Logo_PREMA",
+      "name": "PREMA Racing",
+    },
+    {
+      "carLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f3/global/cars/2025/05TRIDENT_025F3_1500k-00T",
+      "drivers": [
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/04_Strmsted",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1461/Noah-Strmsted",
+          "name": "N. Strømsted",
+          "position": 4,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/05_Camara",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1464/Rafael-Camara",
+          "name": "R. Câmara",
+          "position": 5,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/06_Wurz",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1456/Charlie-Wurz",
+          "name": "C. Wurz",
+          "position": 6,
+        },
+      ],
+      "infoLink": "https://www.fiaformula3.com/Teams/233/TRIDENT",
+      "logoLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f3/global/teams/logos/Team-Logo_Trident",
+      "name": "TRIDENT",
+    },
+    {
+      "carLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f3/global/cars/2025/07ART_025F3_1500k-00T",
+      "drivers": [
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/07_Van_Hoepen",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1449/Laurens-Van-Hoepen",
+          "name": "L. Van Hoepen",
+          "position": 7,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/08_Taponen",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1460/Tuukka-Taponen",
+          "name": "T. Taponen",
+          "position": 8,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/09_Wharton",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1459/James-Wharton",
+          "name": "J. Wharton",
+          "position": 9,
+        },
+      ],
+      "infoLink": "https://www.fiaformula3.com/Teams/228/ART-Grand-Prix",
+      "logoLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f3/global/teams/logos/Team-Logo_ART",
+      "name": "ART Grand Prix",
+    },
+    {
+      "carLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f3/global/cars/2025/10Campos_025F3_1500k-00T",
+      "drivers": [
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/10_Boya",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1426/Mari-Boya",
+          "name": "M. Boya",
+          "position": 10,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/11_Inthraphuvasak",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1455/Tasanapol-Inthraphuvasak",
+          "name": "T. Inthraphuvasak",
+          "position": 11,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/12_Tsolov",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1425/Nikola-Tsolov",
+          "name": "N. Tsolov",
+          "position": 12,
+        },
+      ],
+      "infoLink": "https://www.fiaformula3.com/Teams/237/Campos-Racing",
+      "logoLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f3/global/teams/logos/Team-Logo_Campos",
+      "name": "Campos Racing",
+    },
+    {
+      "carLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f3/global/cars/2025/16Hitech_025F3_1500k-00T",
+      "drivers": [
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/14_Stenshorne",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1446/Martinius-Stenshorne",
+          "name": "M. Stenshorne",
+          "position": 14,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/PreSeason/Johnson-Hitech_Web025",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1479/Nikita-Johnson",
+          "name": "N. Johnson",
+          "position": 15,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/16_Xie",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1465/Gerrard-Xie",
+          "name": "G. Xie",
+          "position": 16,
+        },
+      ],
+      "infoLink": "https://www.fiaformula3.com/Teams/244/Hitech-TGR",
+      "logoLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_Hitech024",
+      "name": "Hitech TGR",
+    },
+    {
+      "carLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f3/global/cars/2025/18MP_025F3_1500k-00T",
+      "drivers": [
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/17_Tramnitz",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1453/Tim-Tramnitz",
+          "name": "T. Tramnitz",
+          "position": 17,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/18_Del_Pino",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1466/Bruno-Del-Pino",
+          "name": "B. Del Pino",
+          "position": 18,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/19_Alessandro_Giusti",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1467/Alessandro-Giusti",
+          "name": "A. Giusti",
+          "position": 19,
+        },
+      ],
+      "infoLink": "https://www.fiaformula3.com/Teams/240/MP-Motorsport",
+      "logoLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f3/global/teams/logos/Team-Logo_MPMotorsport022",
+      "name": "MP Motorsport",
+    },
+    {
+      "carLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f3/global/cars/2025/20VAR_025F3_1500k-00T",
+      "drivers": [
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/20_Nael",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1468/Theophile-Nael",
+          "name": "T. Naël",
+          "position": 20,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/21_Ramos",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1445/Santiago-Ramos",
+          "name": "S. Ramos",
+          "position": 21,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/22_Domingues",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1474/Ivan-Domingues",
+          "name": "I. Domingues",
+          "position": 22,
+        },
+      ],
+      "infoLink": "https://www.fiaformula3.com/Teams/247/Van-Amersfoort-Racing",
+      "logoLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f3/global/teams/logos/Team-Logo_VAR",
+      "name": "Van Amersfoort Racing",
+    },
+    {
+      "carLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f3/global/cars/2025/24Rodin_025F3_1500k-00T",
+      "drivers": [
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/23_Voisin",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1450/Callum-Voisin",
+          "name": "C. Voisin",
+          "position": 23,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/25_Sharp",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1472/Louis-Sharp",
+          "name": "L. Sharp",
+          "position": 24,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/26_Bilinski",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1469/Roman-Bilinski",
+          "name": "R. Bilinski",
+          "position": 25,
+        },
+      ],
+      "infoLink": "https://www.fiaformula3.com/Teams/211/Rodin-Motorsport",
+      "logoLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f3/global/teams/logos/Team-Logo_RodinMotorsport",
+      "name": "Rodin Motorsport",
+    },
+    {
+      "carLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f3/global/cars/2025/28AIX_025F3_1500k-00T",
+      "drivers": [
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/Hedley_02278_05ALylOz-2",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1458/James-Hedley",
+          "name": "J. Hedley",
+          "position": 26,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/27_Marinangeli",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1475/Nicola-Marinangeli",
+          "name": "N. Marinangeli",
+          "position": 27,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/Benavides_02278_05ALylOz-2",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1413/Brad-Benavides",
+          "name": "B. Benavides",
+          "position": 28,
+        },
+      ],
+      "infoLink": "https://www.fiaformula3.com/Teams/248/AIX-Racing",
+      "logoLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f3/global/teams/logos/Team-Logo_AIXRacing",
+      "name": "AIX Racing",
+    },
+    {
+      "carLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_33,w_130/v1/f3/global/cars/2025/30DAMS_025F3_1500k-00T",
+      "drivers": [
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/29_Lacorte",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1471/Nicola-Lacorte",
+          "name": "N. Lacorte",
+          "position": 29,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/30_Zagazeta",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1451/Matias-Zagazeta",
+          "name": "M. Zagazeta",
+          "position": 30,
+        },
+        {
+          "imgLink": "https://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_65,w_100/v1/f3/global/drivers/2025/2025%20Driver%20profiles/31_Ho",
+          "infoLink": "https://www.fiaformula3.com/Drivers/1473/Christian-Ho",
+          "name": "C. Ho",
+          "position": 31,
+        },
+      ],
+      "infoLink": "https://www.fiaformula3.com/Teams/249/DAMS-Lucas-Oil",
+      "logoLink": "https://www.fiaformula3.comhttps://res.cloudinary.com/prod-f2f3/c_fill,dpr_1.0,f_auto,g_auto,h_79,w_140/v1/f2/global/teams/logos/Team-Logo_DAMS_LucasOil-024",
+      "name": "DAMS Lucas Oil",
     },
   ],
 }
