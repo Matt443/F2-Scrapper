@@ -34,7 +34,7 @@
         "test": "jest src/*",
         "start": "node dist/index.js",
         "dev": "nodemon",
-        "build": "tsc && tsc-alias",
+        "build": "tsc --project tsconfig.build.json && tsc-alias",
         "prettier": "prettier . --write"
     },
     "dependencies": {

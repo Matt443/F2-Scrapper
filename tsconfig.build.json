@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ES2022",
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "strict": true,
+        "skipLibCheck": true,
+        "baseUrl": "./",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "types": ["node", "jest"]
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "src/tests/*"],
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    },
+    "tsc-alias": {
+        "resolveFullPaths": true,
+        "resolveFullExtension": ".js"
+    }
+}
