@@ -1,6 +1,6 @@
-# F2-Scrapper
+# F2F3-Scrapper
 
-A Node.js web scraping tool for extracting data from F2 Website.
+A Node.js web scraping tool for extracting data from F2 Website and F3 Website.
 
 ## Installation
 
@@ -26,6 +26,7 @@ npm run dev
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
 | No              | The year from which you want to extract points table for (2017 - current) | current year     |
 | No              | if `racesDetails` property should be attached                             | `False`          |
+| No              | `True` for **f3** standings and `False` for **f2** standings              | `False`          |
 
 ```js
 [
@@ -56,6 +57,7 @@ npm run dev
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
 | No              | The year from which you want to extract points table for (2017 - current) | current year     |
 | No              | if `racesDetails` property should be attached                             | `False`          |
+| No              | `True` for **f3** standings and `False` for **f2** standings              | `False`          |
 
 ```js
 [
@@ -86,6 +88,7 @@ npm run dev
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
 | No              | The year from which you want to extract points table for (2017 - current) | current year     |
 | No              | if `winners` property should be attached                                  | `False`          |
+| No              | `True` for **f3** calendar and `False` for **f2** calendar                | `False`          |
 
 ```js
 [
@@ -122,6 +125,7 @@ npm run dev
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
 | No              | The year from which you want to extract points table for (2017 - current) | current year     |
 | No              | Number id of Race Event or event name for example `Sakhir`                | `Sakhir`         |
+| No              | `True` for **f3** race results and `False` for **f2** race results        | `False`          |
 
 ```js
 [
@@ -148,6 +152,7 @@ npm run dev
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
 | No              | The year from which you want to extract points table for (2017 - current) | current year     |
 | No              | Number id of Race Event or event name for example `Sakhir`                | `Sakhir`         |
+| No              | `True` for **f3** sprint results and `False` for **f2** sprint results    | `False`          |
 
 ```js
 = [
@@ -179,6 +184,7 @@ npm run dev
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
 | No              | The year from which you want to extract points table for (2017 - current) | current year     |
 | No              | Number id of Race Event or event name for example `Sakhir`                | `Sakhir`         |
+| No              | `True` for **f3** quali results and `False` for **f2** quali results      | `False`          |
 
 ```js
 [
@@ -205,10 +211,11 @@ npm run dev
 
 ### **7. getPracticeResults**
 
-| Needed Paramter | Paramter Description                                                      | Default Argument |
-| --------------- | ------------------------------------------------------------------------- | ---------------- |
-| No              | The year from which you want to extract points table for (2017 - current) | current year     |
-| No              | Number id of Race Event or event name for example `Sakhir`                | `Sakhir`         |
+| Needed Paramter | Paramter Description                                                       | Default Argument |
+| --------------- | -------------------------------------------------------------------------- | ---------------- |
+| No              | The year from which you want to extract points table for (2017 - current)  | current year     |
+| No              | Number id of Race Event or event name for example `Sakhir`                 | `Sakhir`         |
+| No              | `True` for **f3** practice results and `False` for **f2** practice results | `False`          |
 
 ```js
 [
@@ -230,7 +237,9 @@ npm run dev
 
 ### **8. getDriverLineup**
 
-This function doesn’t take any parameters.
+| Needed Paramter | Paramter Description                                                 | Default Argument |
+| --------------- | -------------------------------------------------------------------- | ---------------- |
+| No              | `True` for **f3** driver lineup and `False` for **f2** driver lineup | `False`          |
 
 ```js
 {
@@ -262,7 +271,9 @@ This function doesn’t take any parameters.
 
 ### **9. getHallOfFame**
 
-This function doesn’t take any parameters.
+| Needed Paramter | Paramter Description                                               | Default Argument |
+| --------------- | ------------------------------------------------------------------ | ---------------- |
+| No              | `True` for **f3** hall of fame and `False` for **f2** hall of fame | `False`          |
 
 ```js
 [
@@ -284,8 +295,9 @@ This function doesn’t take any parameters.
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
 | Yes             | Number id of Race Event or event name for example `Sakhir`                | `Sakhir`         |
 | No              | The year from which you want to extract points table for (2017 - current) | current year     |
+| No              | `True` for **f3** track details and `False` for **f2** track details      | `False`          |
 
-In some cases `trackRecord`, `sprintInfo` and `raceInfo` properties are not defined. See [Zandvoort](https://www.fiaformula2.com/Results?raceid=1045)
+In some cases `trackRecord`, `sprintInfo` `raceInfo` or `trackRecord.speed` properties are not defined. See [Zandvoort](https://www.fiaformula2.com/Results?raceid=1045)
 
 ```js
 {
@@ -314,7 +326,7 @@ In some cases `trackRecord`, `sprintInfo` and `raceInfo` properties are not defi
 ## Usage
 
 WARNING: Abusing this library may result in an IP ban from the host website.  
-Please use with caution and try to limit the rate and amount of your requests if you value your access to fiaformula2.com
+Please use with caution and try to limit the rate and amount of your requests if you value your access to fiaformula2.com or fiaformula3.com
 
 ## License
 
