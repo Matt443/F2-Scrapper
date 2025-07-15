@@ -1,0 +1,367 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Testing getAllTrackDetails function Should return all track details (2022) 1`] = `
+[
+  {
+    "circuitLength": "5.412 KM",
+    "firstRace": 2017,
+    "raceInfo": {
+      "laps": 32,
+      "length": "173.184 KM",
+    },
+    "sprintInfo": {
+      "laps": 23,
+      "length": "124.476 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/BH",
+    "trackName": "Bahrain International Circuit",
+    "trackRecord": {
+      "driver": "Charles Leclerc",
+      "team": "PREMA Racing",
+      "time": "1:38.907",
+      "year": 2017,
+    },
+  },
+  {
+    "circuitLength": "6.174 KM",
+    "firstRace": 2021,
+    "raceInfo": {
+      "laps": 28,
+      "length": "172.872 KM",
+    },
+    "sprintInfo": {
+      "laps": 20,
+      "length": "123.48 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/SA",
+    "trackName": "Jeddah Corniche Circuit",
+    "trackRecord": {
+      "driver": "Oscar Piastri",
+      "team": "PREMA Racing",
+      "time": "1:40.878",
+      "year": 2021,
+    },
+  },
+  {
+    "circuitLength": "4.909 KM",
+    "firstRace": 2022,
+    "raceInfo": {
+      "laps": 35,
+      "length": "171.815 KM",
+    },
+    "sprintInfo": {
+      "laps": 25,
+      "length": "122.725 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/IM",
+    "trackName": "Autodromo Internazionale Enzo e Dino Ferrari",
+  },
+  {
+    "circuitLength": "4.657 KM",
+    "firstRace": 2017,
+    "raceInfo": {
+      "laps": 37,
+      "length": "172.309 KM",
+    },
+    "sprintInfo": {
+      "laps": 26,
+      "length": "121.082 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/ES",
+    "trackName": "Circuit de Barcelona-Catalunya ",
+    "trackRecord": {
+      "driver": "N",
+      "team": "N/",
+      "time": "NEW LAYOUT",
+      "year": NaN,
+    },
+  },
+  {
+    "circuitLength": "3.337 KM",
+    "firstRace": 2017,
+    "raceInfo": {
+      "laps": 42,
+      "length": "140.154 KM",
+    },
+    "sprintInfo": {
+      "laps": 30,
+      "length": "100.11 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/MC",
+    "trackName": "Circuit de Monaco",
+    "trackRecord": {
+      "driver": "Charles Leclerc",
+      "team": "PREMA Racing",
+      "time": "1:19.309",
+      "year": 2017,
+    },
+  },
+  {
+    "circuitLength": "6.003 KM",
+    "firstRace": 2017,
+    "raceInfo": {
+      "laps": 29,
+      "length": "174.087 KM",
+    },
+    "sprintInfo": {
+      "laps": 21,
+      "length": "126.063 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/AZ",
+    "trackName": "Baku City Circuit",
+    "trackRecord": {
+      "driver": "Charles Leclerc",
+      "team": "PREMA Racing",
+      "time": "1:52.129",
+      "year": 2017,
+    },
+  },
+  {
+    "circuitLength": "5.891 KM",
+    "firstRace": 2017,
+    "raceInfo": {
+      "laps": 29,
+      "length": "170.839 KM",
+    },
+    "sprintInfo": {
+      "laps": 21,
+      "length": "123.711 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/GB",
+    "trackName": "Silverstone Circuit",
+    "trackRecord": {
+      "driver": "Zhou Guanyu",
+      "team": "UNI-Virtuosi Racing",
+      "time": "1:38.182",
+      "year": 2019,
+    },
+  },
+  {
+    "circuitLength": "4.326 KM",
+    "firstRace": 2017,
+    "raceInfo": {
+      "laps": 40,
+      "length": "173.04 KM",
+    },
+    "sprintInfo": {
+      "laps": 28,
+      "length": "121.128 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/AT",
+    "trackName": "Red Bull Ring",
+    "trackRecord": {
+      "driver": "Charles Leclerc",
+      "team": "PREMA Racing",
+      "time": "1:13.396",
+      "year": 2017,
+    },
+  },
+  {
+    "circuitLength": "5.842 KM",
+    "firstRace": 2018,
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/FR",
+    "trackName": "Circuit Paul Ricard",
+    "trackRecord": {
+      "driver": "Lando Norris",
+      "team": "Carlin",
+      "time": "1:42.226",
+      "year": 2018,
+    },
+  },
+  {
+    "circuitLength": "4.381 KM",
+    "firstRace": 2017,
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/HU",
+    "trackName": "Hungaroring",
+    "trackRecord": {
+      "driver": "Oliver Rowland",
+      "team": "DAMS",
+      "time": "1:26.268",
+      "year": 2017,
+    },
+  },
+  {
+    "circuitLength": "7.004 KM",
+    "firstRace": 2017,
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/BE",
+    "trackName": "Circuit de Spa-Francorchamps",
+    "trackRecord": {
+      "driver": "Nyck de Vries",
+      "team": "PERTAMINA PREMA Theodore Racing",
+      "time": "1:56.054",
+      "year": 2018,
+    },
+  },
+  {
+    "circuitLength": "4.259 KM",
+    "firstRace": 2022,
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/NL",
+    "trackName": "Circuit Zandvoort",
+  },
+  {
+    "circuitLength": "5.793 KM",
+    "firstRace": 2017,
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/IT",
+    "trackName": "Autodromo Nazionale Monza",
+    "trackRecord": {
+      "driver": "Nobuharu Matsushita",
+      "team": "ART Grand Prix",
+      "time": "1:30.982",
+      "year": 2017,
+    },
+  },
+  {
+    "circuitLength": "5.281 KM",
+    "firstRace": 2017,
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/AE",
+    "trackName": "Yas Marina Circuit",
+    "trackRecord": {
+      "driver": "Oscar Piastri",
+      "team": "PREMA Racing",
+      "time": "1:35.077",
+      "year": 2021,
+    },
+  },
+]
+`;
+
+exports[`Testing getAllTrackDetails function Should return all truck details from f3 1`] = `
+[
+  {
+    "circuitLength": "5.412 KM",
+    "firstRace": 2022,
+    "raceInfo": {
+      "laps": 23,
+      "length": "124.476 KM",
+    },
+    "sprintInfo": {
+      "laps": 20,
+      "length": "108.24 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/BH",
+    "trackName": "Bahrain International Circuit",
+  },
+  {
+    "circuitLength": "4.909 KM",
+    "firstRace": 2022,
+    "raceInfo": {
+      "laps": 24,
+      "length": "117.816 KM",
+    },
+    "sprintInfo": {
+      "laps": 20,
+      "length": "98.18 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/IM",
+    "trackName": "Autodromo Internazionale Enzo e Dino Ferrari",
+  },
+  {
+    "circuitLength": "4.657 KM",
+    "firstRace": 2019,
+    "raceInfo": {
+      "laps": 24,
+      "length": "111.768 KM",
+    },
+    "sprintInfo": {
+      "laps": 20,
+      "length": "93.14 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/ES",
+    "trackName": "Circuit de Barcelona-Catalunya",
+    "trackRecord": {
+      "driver": "Dennis Hauger",
+      "team": "PREMA Racing",
+      "time": "1:32.904",
+      "year": 2021,
+    },
+  },
+  {
+    "circuitLength": "5.891 KM",
+    "firstRace": 2019,
+    "raceInfo": {
+      "laps": 22,
+      "length": "129.602 KM",
+    },
+    "sprintInfo": {
+      "laps": 18,
+      "length": "106.038 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/GB",
+    "trackName": "Silverstone Circuit",
+    "trackRecord": {
+      "driver": "Jüri Vips",
+      "team": "Hitech Grand Prix",
+      "time": "1:43.902",
+      "year": 2019,
+    },
+  },
+  {
+    "circuitLength": "4.326 KM",
+    "firstRace": 2019,
+    "raceInfo": {
+      "laps": 26,
+      "length": "112.476 KM",
+    },
+    "sprintInfo": {
+      "laps": 21,
+      "length": "90.846 KM",
+    },
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/AT",
+    "trackName": "Red Bull Ring",
+    "trackRecord": {
+      "driver": "Sebastián Fernández",
+      "team": "ART Grand Prix",
+      "time": "1:19.429",
+      "year": 2020,
+    },
+  },
+  {
+    "circuitLength": "4.381 KM",
+    "firstRace": 2019,
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/HU",
+    "trackName": "Hungaroring",
+    "trackRecord": {
+      "driver": "Christian Lundgaard",
+      "team": "ART Grand Prix",
+      "time": "1:31.761",
+      "year": 2019,
+    },
+  },
+  {
+    "circuitLength": "7.004 KM",
+    "firstRace": 2019,
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/BE",
+    "trackName": "Circuit de Spa-Francorchamps",
+    "trackRecord": {
+      "driver": "Jehan Daruvala",
+      "team": "PREMA Racing",
+      "time": "2:05.125",
+      "year": 2019,
+    },
+  },
+  {
+    "circuitLength": "4.259 KM",
+    "firstRace": 2021,
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/NL",
+    "trackName": "Zandvoort Circuit",
+    "trackRecord": {
+      "driver": "Dennis Hauger",
+      "team": "PREMA Racing",
+      "time": "1:24.580",
+      "year": 2021,
+    },
+  },
+  {
+    "circuitLength": "5.793 KM",
+    "firstRace": 2019,
+    "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f3/global/circuits/details/IT",
+    "trackName": "Autodromo Nazionale Monza",
+    "trackRecord": {
+      "driver": "Christian Lundgaard",
+      "team": "ART Grand Prix",
+      "time": "1:38.834",
+      "year": 2019,
+    },
+  },
+]
+`;
