@@ -323,7 +323,7 @@ In some cases `trackRecord`, `sprintInfo` `raceInfo` or `trackRecord.speed` prop
 }
 ```
 
-### **10. getAllTracksDetails**
+### **11. getAllTracksDetails**
 
 | Needed Paramter | Paramter Description                                                      | Default Argument |
 | --------------- | ------------------------------------------------------------------------- | ---------------- |
