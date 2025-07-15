@@ -241,7 +241,7 @@ export function getCalendarEvent(htmlContent: string, year: number, f3Results: b
         month: $('.date .month').text()
     };
     const eventName = $('.event-place span.ellipsis').text();
-    const resultsURL = $('.wrapper a').attr('href');
+    const resultsURL = $('a').attr('href');
 
     const eventDetails: RaceEvent = {
         name: eventName,
