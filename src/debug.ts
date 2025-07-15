@@ -1,8 +1,7 @@
-import { getAllTrackDetails } from './scrappers/all-track-details.scrapper';
-import { getTrackDetails } from './scrappers/track-details.scrapper';
+import { getAllTracksDetails } from './scrappers/all-track-details.scrapper';
 
 async function f() {
-    const r = await getAllTrackDetails(2025);
+    const r = await getAllTracksDetails(2025);
     console.log(r, r.length);
 }
 

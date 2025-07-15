@@ -323,6 +323,37 @@ In some cases `trackRecord`, `sprintInfo` `raceInfo` or `trackRecord.speed` prop
 }
 ```
 
+### **10. getAllTracksDetails**
+
+| Needed Paramter | Paramter Description                                                      | Default Argument |
+| --------------- | ------------------------------------------------------------------------- | ---------------- |
+| No              | The year from which you want to extract points table for (2017 - current) | current year     |
+| No              | `True` for **f3** track details and `False` for **f2** track details      | `False`          |
+
+```js
+[
+  {
+    circuitLength: "5.412 KM",
+    firstRace: 2017,
+    raceInfo: {
+      laps: 32,
+      length: "173.184 KM",
+    },
+    sprintInfo: {
+      laps: 23,
+      length: "124.476 KM",
+    },
+    trackMapImg: "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/BH",
+    trackName: "Bahrain International Circuit",
+    trackRecord: {
+      driver: "Charles Leclerc",
+      team: "PREMA Racing",
+      time: "1:38.907",
+      year: 2017,
+    },
+  }
+```
+
 ## Usage
 
 WARNING: Abusing this library may result in an IP ban from the host website.  

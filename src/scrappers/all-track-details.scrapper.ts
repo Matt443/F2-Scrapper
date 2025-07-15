@@ -7,7 +7,7 @@ import { getTrackDetails } from './track-details.scrapper';
  * @param [f3Results=false]
  * @returns {Promise<CircuitInfo>}
  */
-export async function getAllTrackDetails(
+export async function getAllTracksDetails(
     year: number = new Date().getFullYear(),
     f3Results: boolean = false
 ): Promise<CircuitInfo[]> {
