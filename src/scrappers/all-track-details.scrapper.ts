@@ -10,7 +10,7 @@ import { getTrackDetails } from './track-details.scrapper';
 export async function getAllTracksDetails(
     year: number = new Date().getFullYear(),
     f3Results: boolean = false
-): Promise<CircuitInfo[]> {
+): Promise<Array<CircuitInfo | {}>> {
     try {
         const raceEvents: RaceEvent[] = await getCalendar(year, false, f3Results);
 
@@ -19,7 +19,7 @@ export async function getAllTracksDetails(
                 return await getTrackDetails(raceEvent.name, year, f3Results);
             })
         );
-        return tracksDetails.filter((trackDetails) => trackDetails !== false);
+        return tracksDetails;
     } catch (error: unknown) {
         throw Error(error as string);
     }

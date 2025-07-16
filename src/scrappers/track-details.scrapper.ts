@@ -18,12 +18,12 @@ export async function getTrackDetails(
     raceName: string,
     year: number = new Date().getFullYear(),
     f3Results: boolean = false
-): Promise<CircuitInfo | false> {
+): Promise<CircuitInfo | {}> {
     try {
         const resultsURL = await findResultsURL(year, raceName, f3Results);
         const resultsPageHTML = await axios(resultsURL);
 
-        if (resultsPageHTML.request.res.responseUrl !== resultsURL) return false;
+        if (resultsPageHTML.request.res.responseUrl !== resultsURL) return {};
         const $ = cheerio.load(resultsPageHTML.data);
         const trackName = //@ts-ignore
             $('.circuit-header-block .circuit-heading > h2').contents().get()[0].data as string;
