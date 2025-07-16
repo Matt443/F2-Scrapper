@@ -14,11 +14,11 @@ export async function getAllTracksDetails(
     try {
         const raceEvents: RaceEvent[] = await getCalendar(year, false, f3Results);
 
-        const tracksDetails: CircuitInfo[] = [];
-        for (const raceEvent of raceEvents) {
-            const trackDetails = await getTrackDetails(raceEvent.name, year, f3Results);
-            tracksDetails.push(trackDetails);
-        }
+        const tracksDetails = await Promise.all(
+            raceEvents.map(async (raceEvent) => {
+                return await getTrackDetails(raceEvent.name, year, f3Results);
+            })
+        );
         return tracksDetails;
     } catch (error: unknown) {
         throw Error(error as string);
