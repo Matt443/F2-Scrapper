@@ -19,7 +19,7 @@ export async function getAllTracksDetails(
                 return await getTrackDetails(raceEvent.name, year, f3Results);
             })
         );
-        return tracksDetails;
+        return tracksDetails.filter((trackDetails) => trackDetails !== false);
     } catch (error: unknown) {
         throw Error(error as string);
     }
