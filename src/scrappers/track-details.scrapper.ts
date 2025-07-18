@@ -44,8 +44,7 @@ export async function getTrackDetails(
         };
         if (recordDesc !== 'n/a')
             circuitInfo.trackRecord = assignTrackRecord(resultsPageHTML.data, recordDesc);
-
-        if (circuitInformations.length > 2) {
+        if (circuitInformations.length > 4) {
             const { sprintInfo, raceInfo } = assignTrackAdvancedInformation(circuitInformations);
             circuitInfo.sprintInfo = sprintInfo;
             circuitInfo.raceInfo = raceInfo;
