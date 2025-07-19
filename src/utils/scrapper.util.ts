@@ -21,6 +21,7 @@ import { raceTypeStrategy } from './race-type.strategy.util';
 import { getCalendar } from '@/scrappers/calendar.scrapper';
 import { arrayToObj, filterWithIndex, indexAtFound, validationWithRegex } from './common.util';
 import { getDynamicLinks, getStaticLinks } from '@/consts/urls.const';
+import { columns, resultTypesMap } from '@/consts/resultHelpers.const';
 
 /**
  *
@@ -574,4 +575,46 @@ export function assignTrackAdvancedInformation(circuitInformations: string[]): {
         length: circuitInformations[5]
     };
     return { sprintInfo, raceInfo };
+}
+
+/**
+ *
+ * @param {string} html
+ * @param {string[]} dateStrings
+ * @param {number[]} resultIndexes
+ * @param {number[]} foundedIndexes
+ * @returns {{ qualiType: ResultsTypes; results: DriverQualiResult[] }[]}
+ */
+export function getAllQualisResults(
+    html: string,
+    dateStrings: string[],
+    resultIndexes: number[],
+    foundedIndexes: number[]
+): { qualiType: ResultsTypes; results: DriverQualiResult[] }[] {
+    return resultIndexes.map((index: number, i: number) => {
+        return {
+            qualiType: resultTypesMap.quali[foundedIndexes[i]],
+            results: getQualiPracticeResult(html, index, columns.quali, dateStrings)
+        };
+    });
+}
+
+/**
+ *
+ * @param {string} html
+ * @param {number[]} resultIndexes
+ * @param {number[]} foundedIndexes
+ * @returns {{ qualiType: ResultsTypes; results: DriverRaceResult[] }[]}
+ */
+export function getAllSprintResults(
+    html: string,
+    resultIndexes: number[],
+    foundedIndexes: number[]
+): { raceType: ResultsTypes; results: DriverRaceResult[] }[] {
+    return resultIndexes.map((index: number, i: number) => {
+        return {
+            raceType: resultTypesMap.sprintRace[foundedIndexes[i]],
+            results: getAnyResults(html, index, columns.race)
+        };
+    });
 }

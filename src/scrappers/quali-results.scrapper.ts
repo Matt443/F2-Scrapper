@@ -1,9 +1,10 @@
-import { DriverQualiResults, ResultsTypes } from '@/types/scraped.type';
+import { resultTypesMap } from '@/consts/resultHelpers.const';
+import { DriverQualiResult, ResultsTypes } from '@/types/scraped.type';
 import {
     filterResults,
     findResultsURL,
-    getDateResults,
-    getQualiPracticeResult
+    getAllQualisResults,
+    getDateResults
 } from '@/utils/scrapper.util';
 import axios from 'axios';
 
@@ -18,7 +19,7 @@ export async function getQualiResults(
     year: number = new Date().getFullYear(),
     raceId: string | number = 'Sakhir',
     f3Results: boolean = false
-): Promise<DriverQualiResults[]> {
+): Promise<{ qualiType: ResultsTypes; results: DriverQualiResult[] }[]> {
     try {
         // Finding URL with results
 
@@ -26,34 +27,22 @@ export async function getQualiResults(
 
         //Defining requested result types
         const resultsPageHTML = await axios(resultsURL);
-        const requestedResultTypes: ResultsTypes[] = [
-            'QUALIFYING SESSION',
-            'QUALIFYING GROUP A',
-            'QUALIFYING GROUP B',
-            'QUALIFYING'
-        ];
 
         const dateStrings: string[] = getDateResults(resultsPageHTML.data);
 
         //Filtering result types
         const [resultIndexes, foundedIndexes] = filterResults(
             resultsPageHTML.data,
-            requestedResultTypes
+            resultTypesMap.quali
         );
 
         //Getting all founded results
-        const resultsAllQuali = resultIndexes.map((index: number, i: number) => {
-            return {
-                qualiType: requestedResultTypes[foundedIndexes[i]],
-                results: getQualiPracticeResult(
-                    resultsPageHTML.data,
-                    index,
-                    ['laps', 'time', 'gap', 'int', 'kph', 'lap_set_on'],
-                    dateStrings
-                )
-            };
-        });
-        return resultsAllQuali;
+        return getAllQualisResults(
+            resultsPageHTML.data,
+            dateStrings,
+            resultIndexes,
+            foundedIndexes
+        );
     } catch (error: unknown) {
         throw new Error(error as string);
     }

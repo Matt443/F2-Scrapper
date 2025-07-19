@@ -1,3 +1,4 @@
+import { columns, resultTypesMap } from '@/consts/resultHelpers.const';
 import { DriverQualiResult, ResultsTypes } from '@/types/scraped.type';
 import {
     filterResults,
@@ -24,7 +25,7 @@ export async function getPracticeResults(
         const resultsURL = await findResultsURL(year, raceId, f3Results);
 
         const resultsPageHTML = await axios(resultsURL);
-        const requestedResultTypes: ResultsTypes[] = ['FREE PRACTICE', 'PRACTICE'];
+        const requestedResultTypes: ResultsTypes[] = resultTypesMap.practice;
         const [resultIndexes, _foundedIndexes] = filterResults(
             resultsPageHTML.data,
             requestedResultTypes
@@ -34,7 +35,7 @@ export async function getPracticeResults(
         return getQualiPracticeResult(
             resultsPageHTML.data,
             resultIndexes[0],
-            ['laps', 'time', 'gap', 'int', 'kph', 'lap_set_on'],
+            columns.quali,
             dateStrings
         );
     } catch (error: unknown) {

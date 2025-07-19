@@ -1,5 +1,6 @@
-import { DriverSprintResults, ResultsTypes } from '@/types/scraped.type';
-import { filterResults, findResultsURL, getAnyResults } from '@/utils/scrapper.util';
+import { resultTypesMap } from '@/consts/resultHelpers.const';
+import { DriverRaceResult, ResultsTypes } from '@/types/scraped.type';
+import { filterResults, findResultsURL, getAllSprintResults } from '@/utils/scrapper.util';
 import axios from 'axios';
 
 /**
@@ -13,41 +14,22 @@ export async function getSprintResults(
     year: number = new Date().getFullYear(),
     raceId: string | number = 'Sakhir',
     f3Results: boolean = false
-): Promise<DriverSprintResults[]> {
+): Promise<{ raceType: ResultsTypes; results: DriverRaceResult[] }[]> {
     try {
         // Finding URL with results
         const resultsURL = await findResultsURL(year, raceId, f3Results);
 
         const resultsPageHTML = await axios(resultsURL);
-        //Defining requested result types
-        const requestedResultTypes: ResultsTypes[] = [
-            'SPRINT RACE',
-            'SPRINT RACE 1',
-            'SPRINT RACE 2'
-        ];
+
         //Filtering result types
         const [resultIndexes, foundedIndexes] = filterResults(
             resultsPageHTML.data,
-            requestedResultTypes
+            resultTypesMap.sprintRace
         );
 
         //Getting all founded results
-        const resultsAllSprints = resultIndexes.map((index: number, i: number) => {
-            return {
-                raceType: requestedResultTypes[foundedIndexes[i]],
-                results: getAnyResults(resultsPageHTML.data, index, [
-                    'laps',
-                    'time',
-                    'gap',
-                    'int',
-                    'kph',
-                    'best',
-                    'lap'
-                ])
-            };
-        });
 
-        return resultsAllSprints;
+        return getAllSprintResults(resultsPageHTML.data, resultIndexes, foundedIndexes);
     } catch (error: unknown) {
         throw new Error(error as string);
     }
