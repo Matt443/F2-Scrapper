@@ -69,12 +69,6 @@ exports[`Testing getAllTrackDetails function Should return all track details (20
     },
     "trackMapImg": "https://res.cloudinary.com/prod-f2f3/ar_16:9,c_fill,dpr_1.0,f_auto,g_auto,h_506,w_900/v1/f2/global/circuits/details/ES",
     "trackName": "Circuit de Barcelona-Catalunya ",
-    "trackRecord": {
-      "driver": "N",
-      "team": "N/",
-      "time": "NEW LAYOUT",
-      "year": NaN,
-    },
   },
   {
     "circuitLength": "3.337 KM",
