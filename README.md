@@ -354,6 +354,35 @@ In some cases `trackRecord`, `sprintInfo` `raceInfo` or `trackRecord.speed` prop
   }
 ```
 
+### **12. getTrackDetails**
+
+| Needed Paramter | Paramter Description                                                      | Default Argument |
+| --------------- | ------------------------------------------------------------------------- | ---------------- |
+| No              | The year from which you want to extract points table for (2017 - current) | current year     |
+| No              | Number id of Race Event or event name for example `Sakhir`                | `Sakhir`         |
+| No              | `True` for **f3** track details and `False` for **f2** track details      | `False`          |
+
+```js
+{
+  featureRace: [
+    {
+      best: "1:23.251",
+      code: "DRU",
+      gap: "-",
+      int: "-",
+      kph: "134.344",
+      lap: 29,
+      laps: 42,
+      name: "F. Drugovich",
+      number: 11,
+      position: "1",
+      team: "MP Motorsport",
+      time: "1:02:35.675"
+    }
+  ]
+  ...
+```
+
 ## Usage
 
 WARNING: Abusing this library may result in an IP ban from the host website.  
