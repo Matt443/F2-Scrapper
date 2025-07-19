@@ -138,3 +138,10 @@ export interface CircuitInfo {
     raceInfo?: RaceLength;
     trackRecord?: TrackRecordInfo;
 }
+
+export interface AllSessionsResults {
+    featureRace: DriverRaceResult[];
+    sprintRace: { raceType: ResultsTypes; results: DriverRaceResult[] }[];
+    qualiSessions: { qualiType: ResultsTypes; results: DriverQualiResult[] }[];
+    practice: DriverQualiResult[];
+}

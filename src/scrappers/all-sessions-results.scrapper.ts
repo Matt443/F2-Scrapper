@@ -1,5 +1,5 @@
 import { columns, resultTypesMap } from '@/consts/resultHelpers.const';
-import { ResultsTypes } from '@/types/scraped.type';
+import { AllSessionsResults, ResultsTypes } from '@/types/scraped.type';
 import {
     filterResults,
     findResultsURL,
@@ -11,11 +11,18 @@ import {
 } from '@/utils/scrapper.util';
 import axios from 'axios';
 
+/**
+ *
+ * @param {number} year
+ * @param {string | number} [raceId=Sakhir]
+ * @param {boolean} [f3Results=false]
+ * @returns {Promise<AllSessionsResults>}
+ */
 export async function getAllSessionsResults(
     year: number = new Date().getFullYear(),
     raceId: string | number = 'Sakhir',
     f3Results: boolean = false
-) {
+): Promise<AllSessionsResults> {
     try {
         const resultsURL = await findResultsURL(year, raceId, f3Results);
 

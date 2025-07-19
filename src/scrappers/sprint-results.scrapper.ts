@@ -6,7 +6,7 @@ import axios from 'axios';
 /**
  *
  * @param {number} year
- * @param {string | number} raceId
+ * @param {string | number} [raceId=Sakhir]
  * @param {boolean} [f3Results=false]
  * @returns {Promise<DriverRaceResult[]>}
  */
