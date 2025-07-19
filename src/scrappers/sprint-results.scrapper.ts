@@ -28,7 +28,6 @@ export async function getSprintResults(
         );
 
         //Getting all founded results
-
         return getAllSprintResults(resultsPageHTML.data, resultIndexes, foundedIndexes);
     } catch (error: unknown) {
         throw new Error(error as string);
