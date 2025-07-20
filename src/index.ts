@@ -9,3 +9,4 @@ export { getDriverLineup } from '@/scrappers/driver-lineup.scrapper';
 export { getHallOfFame } from '@/scrappers/hall-of-fame.scrapper';
 export { getTrackDetails } from '@/scrappers/track-details.scrapper';
 export { getAllTracksDetails } from '@/scrappers/all-track-details.scrapper';
+export { getAllSessionsResults } from '@/scrappers/all-sessions-results.scrapper';
