@@ -1,5 +1,11 @@
 import { columns, resultTypesMap } from '@/consts/resultHelpers.const';
-import { AllSessionsResults, ResultsTypes } from '@/types/scraped.type';
+import {
+    AllSessionsResults,
+    DriverQualiResult,
+    DriverQualiResults,
+    DriverRaceResult,
+    ResultsTypes
+} from '@/types/scraped.type';
 import {
     filterResults,
     findResultsURL,
@@ -40,24 +46,46 @@ export async function getAllSessionsResults(
             return filterResults(resultsPageHTML.data, raceTypes);
         });
 
+        function catchErrors<T, K>(getter: () => T, defualtValue: K): T | K {
+            try {
+                return getter();
+            } catch {
+                return defualtValue;
+            }
+        }
         return {
-            featureRace: getAnyResults(resultsPageHTML.data, resultsIndexes[0][0][0], columns.race),
-            sprintRace: getAllSprintResults(
-                resultsPageHTML.data,
-                resultsIndexes[1][0],
-                resultsIndexes[1][1]
+            featureRace: catchErrors<DriverRaceResult[], []>(
+                () => getAnyResults(resultsPageHTML.data, resultsIndexes[0][0][0], columns.race),
+                []
             ),
-            qualiSessions: getAllQualisResults(
-                resultsPageHTML.data,
-                dateStrings,
-                resultsIndexes[2][0],
-                resultsIndexes[2][1]
+            sprintRace: catchErrors<{ raceType: ResultsTypes; results: DriverRaceResult[] }[], []>(
+                () =>
+                    getAllSprintResults(
+                        resultsPageHTML.data,
+                        resultsIndexes[1][0],
+                        resultsIndexes[1][1]
+                    ),
+                []
             ),
-            practice: getQualiPracticeResult(
-                resultsPageHTML.data,
-                resultsIndexes[3][0][0],
-                columns.quali,
-                dateStrings
+            qualiSessions: catchErrors<DriverQualiResults[], []>(
+                () =>
+                    getAllQualisResults(
+                        resultsPageHTML.data,
+                        dateStrings,
+                        resultsIndexes[2][0],
+                        resultsIndexes[2][1]
+                    ),
+                []
+            ),
+            practice: catchErrors<DriverQualiResult[], []>(
+                () =>
+                    getQualiPracticeResult(
+                        resultsPageHTML.data,
+                        resultsIndexes[3][0][0],
+                        columns.quali,
+                        dateStrings
+                    ),
+                []
             )
         };
     } catch (error: unknown) {

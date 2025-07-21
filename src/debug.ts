@@ -4,7 +4,7 @@ import { getTrackDetails } from './scrappers/track-details.scrapper';
 // import { getCalendar } from './scrappers/calendar.scrapper';
 
 async function f() {
-    const r = await getAllSessionsResults(2024, 'Monaco');
+    const r = await getAllSessionsResults(2019, 'Spa-Francorchamps');
     console.log(r);
 
     // console.log(await getCalendar(2023))
